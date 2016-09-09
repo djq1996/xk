@@ -134,7 +134,11 @@ select {
 	width:100%;
 	}
 #index_banner ul li{
+	width: 100%;
 	float: left;
+}
+#index_banner ul li img{
+	width:100%
 }
 #index_banner .index_banner_left{
 	position: absolute;
