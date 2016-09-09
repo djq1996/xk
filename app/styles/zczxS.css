@@ -1,0 +1,143 @@
+
+.zczxS-main{
+	width: 100%;
+	background: #f7f7f7;
+	font-family: "微软雅黑";
+}
+.zczxS-main h2{
+	width: 1008px;
+	height:31px;
+	line-height: 31px;
+	color:#656565;
+	margin: 0 auto;
+	padding-left: 16px;
+}
+.zczxS-mainConter{
+	width: 976px;
+	height:800px;
+	background: #fff;
+	margin: 0 auto;
+	padding: 24px 10px 0 38px;
+}
+/*<!--内容左-->*/
+.mainConterLeft{
+	width: 626px;
+	float: left;
+	height:100%;
+	text-align: center;
+}
+.mainConterLeftHer{
+	width: 100%;
+	height:27px;
+	margin-bottom: 20px;
+	
+	border-bottom: 1px solid #bebebe;
+}
+.mainConterLeftHer>p{
+	color:#656565;
+	font-size: 16px;
+	height:100%;
+	width: 101px;
+	padding-left: 2px;
+	border-bottom: 2px solid #34a150;
+}
+/*<!--内容右-->*/
+.mainConterRight{
+	width: 267px;
+	float: left;
+	height:100%;
+	margin-left: 83px;
+	overflow:hidden;
+}
+.titleP{
+	color:#333;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.mainCoP{
+	width: 600px;
+	margin:0 auto;
+	color:#333333;
+	font-size: 14px;
+	text-indent: 2em;
+	text-align: left;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+.mainCoPRight{
+	width: 600px;
+	margin:0 auto;
+	color:#333333;
+	font-size: 14px;
+	text-align: right;
+	line-height: 26px;
+	margin-bottom: 40px;
+}
+/*中间的内容右边*/
+.zc-mainContextRight{
+	width: 277px;
+	float: right;
+	overflow: hidden;
+}
+.zvrigrm{
+	width: 100%;
+	height:29px;
+	background: #34a150;
+	line-height: 29px;
+	padding-left: 11px;
+	margin-bottom: 22px;
+}
+.mainContextRightP{
+	line-height: 24px;
+	color:#333333;
+	font-size: 12px;
+}
+
+.zc-cha{
+	height:75px;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.zc-chaImg{
+	display: block;
+	width: 75px;
+	height:75px;
+	float: left;
+	margin-right: 8px;
+}
+.zc-chaRight{
+	float: left;
+}
+.zc-chaRight h1{
+	margin-bottom: 28px;
+}
+.shuJuLeft{
+	float: left;
+	width: 36px;
+	margin-right: 28px;
+}
+.shuJuLeftImg{
+	height:166px;
+	display: block;
+	width: 100%;
+	margin-bottom: 21px;
+}
+.rmzP{
+	width: 100%;
+	height:30px;
+	line-height: 30px;
+	background: #f7f7f7;
+	padding-left: 11px;
+	margin-bottom: 16px;
+}
+.shuangHuiCh{
+	line-height: 24px;
+}
+.backPi{
+	background: #f3f5f8;
+	height:75px;
+	margin: 16px 0;
+}
+.erWeiMa{
+	margin-top: 30px;
+}

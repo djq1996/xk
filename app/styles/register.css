@@ -1,0 +1,269 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: myfont;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  text-decoration: none;
+}
+* {
+  border: 0;
+}
+.register {
+  width: 100%;
+  background: #bad3d8;
+}
+.register .top {
+  width: 100%;
+  height: 137px;
+}
+.register .top img {
+  padding: 49px 20px 0 168px;
+  float: left;
+}
+.register .top span {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 54px;
+  text-indent: 19px;
+  border-left: 1px solid #b3b3b3;
+  font-family: "微软雅黑";
+  font-size: 23px;
+  color: #656565;
+}
+.register .main {
+  width: 1022px;
+  height: 767px;
+  margin: 0 auto;
+  border: 1px solid #bfbfbf;
+  border-radius: 10px 10px 0 0;
+}
+.register .main h3 {
+  width: 100%;
+  height: 40px;
+  background: url(../images/nav_bg.png);
+  border-radius: 10px 10px 0 0;
+  line-height: 40px;
+  text-indent: 18px;
+  color: #fff;
+  font-size: 16px;
+}
+.register .main div {
+  width: 100%;
+  height: 726px;
+  background: #cdcdcd;
+}
+.register .main div .title {
+  margin: 50px 0 0 161px;
+  display: inline-block;
+  width: 198px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background: #f2f2f2;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #656565;
+  border: 1px solid #bfbfbf;
+  border-bottom: 0px;
+}
+.register .main div form {
+  width: 698px;
+  height: 568px;
+  margin: -1px 0 0 161px;
+  background: #f2f2f2;
+  border: 1px solid #bfbfbf;
+  padding-top: 50px;
+}
+.register .main div form input {
+  display: inline-block;
+  width: 338px;
+  height: 48px;
+  border: 1px solid #bfbfbf;
+  margin-left: 100px;
+  color: #cecece;
+  font-size: 20px;
+  line-height: 48px;
+  font-family: "微软雅黑";
+  text-indent: 20px;
+}
+.register .main div form .check {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 11px;
+}
+.register .main div form strong {
+  font-weight: 200;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.register .main div form strong a {
+  color: #046e9f;
+}
+.register .main div form .yzm {
+  width: 158px;
+}
+.register .main div form p span {
+  display: inline-block;
+  width: 165px;
+  height: 38px;
+  color: #656565;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+.register .main div form p span button {
+  width: 108px;
+  height: 37px;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  font-family: "微软雅黑";
+}
+.register .main div form .btn {
+  display: block;
+  width: 340px;
+  height: 50px;
+  margin: 0 auto;
+  color: #fff;
+  background: #2c9948;
+  margin-top: 33px;
+}
+.register .main div form p {
+  height: 70px;
+  line-height: 70px;
+}
+.register .footer {
+  width: 100%;
+  height: 96px;
+  font-size: 12px;
+}
+.register .footer p:first-child {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  font-family: "微软雅黑";
+}
+.register .footer p:nth-child(2) {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "微软雅黑";
+}
+/*# sourceMappingURL=register.css.map */

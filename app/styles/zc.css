@@ -1,0 +1,204 @@
+.zc-main{
+	width: 100%;
+	background: #f7f7f7;
+	padding-top: 22px;
+	font-family: "微软雅黑";
+	overflow: hidden;
+}
+.zc-mainContext{
+	width: 1024px;
+	background: #fff;
+	margin: 0 auto;
+}
+/*中间的内容左边*/
+.zc-mainContextLift{
+	width: 723px;
+	float: left;
+	overflow: hidden;
+}
+.mainContextLiftTop{
+	width: 100%;
+	height:274px;
+}
+.mainContextLiftTop>img{
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+.mainContextLiftTopRight{
+	float: left;
+	width: 330px;
+	margin: 17px 0 0 19px;
+}
+.mainContextLiftTopRight>h2{
+	color:#34a150;
+	font-size: 16px;
+}
+.mainContextLiftTopRight>p{
+	color:#333;
+	font-size: 20px;
+	font-weight: Regular;
+	margin-top: 14px;
+	margin-bottom: 4px;
+}
+.mainContextLiftTopRight>i{
+	color:#999;
+	font-size: 12px;
+	font-style: inherit;
+}
+.mainContextLiftUl{
+	width: 100%;
+	height:29px;
+	margin-bottom: 25px;
+	padding-left: 13px;
+	border-top:2px solid #34a150;
+}
+.mainContextLiftUl li{
+	float: left;
+	height:100%;
+	line-height: 29px;
+	padding: 0 16px;
+	background: #014813;
+	margin-right: 2px;
+}
+.mainContextLiftUl li a{
+	color:#d8d8d8;
+	font-size: 16px;
+}
+.zc-mainauto{
+	width: 100%;
+	margin-left: 13px;
+}
+.zc-mainautoH{
+	color:#333333;
+	font-size: 24px;
+	font-weight: bold;
+}
+.timeUl{
+	width: 100%;
+	height:12px;
+	margin-bottom: 20px;
+}
+.timeUl span{
+	display: block;
+	float: left;
+}
+.timeUl span:nth-child(2){
+	margin: 0 4px;
+	padding: 0 4px;
+	position: relative;
+}
+.timeUl span:nth-child(2):before{
+	width: 1px;
+	height: 11px;
+	background: #956695;
+	content: "";
+	position: absolute;
+	left: 0;
+	top:4px;
+}
+.timeUl span:nth-child(2):after{
+	width: 1px;
+	height: 11px;
+	background: #956695;
+	content: "";
+	position: absolute;
+	right: 0;
+	top:4px;
+}
+.zc-center{
+	height:114px;
+	width: 100%;
+	margin-bottom: 33px;
+	border-bottom: 1px #d6d6d6 dashed;
+}
+.zc-center p{
+	width: 520px;
+	float: left;
+	color:#7d7d7d;
+	font-size: 14px;
+	line-height: 23px;
+}
+.zc-center img{
+	width: 162px;
+	float: left;
+	margin-left: 12px;
+	display: block;
+}
+.zc-ghy{
+	width: 100%;
+	height:123px;
+	line-height: 123px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/*中间的内容右边*/
+.zc-mainContextRight{
+	width: 277px;
+	float: right;
+	overflow: hidden;
+}
+.zvrigrm{
+	width: 100%;
+	height:29px;
+	background: #34a150;
+	line-height: 29px;
+	padding-left: 11px;
+	margin-bottom: 22px;
+}
+.mainContextRightP{
+	line-height: 24px;
+	color:#333333;
+	font-size: 12px;
+}
+
+.zc-cha{
+	height:75px;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.zc-chaImg{
+	display: block;
+	width: 75px;
+	height:75px;
+	float: left;
+	margin-right: 8px;
+}
+.zc-chaRight{
+	float: left;
+}
+.zc-chaRight h1{
+	margin-bottom: 28px;
+}
+.shuJuLeft{
+	float: left;
+	width: 36px;
+	margin-right: 28px;
+}
+.shuJuLeftImg{
+	height:166px;
+	display: block;
+	width: 100%;
+	margin-bottom: 21px;
+}
+.rmzP{
+	width: 100%;
+	height:30px;
+	line-height: 30px;
+	background: #f7f7f7;
+	padding-left: 11px;
+	margin-bottom: 16px;
+}
+.shuangHuiCh{
+	line-height: 24px;
+}
+.backPi{
+	background: #f3f5f8;
+	height:75px;
+	margin: 16px 0;
+}
+.erWeiMa{
+	margin-top: 30px;
+}

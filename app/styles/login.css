@@ -1,0 +1,194 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: myfont;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+input,
+select {
+  vertical-align: middle;
+}
+.login .title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: url(../images/nav_bg.png);
+  color: #fff;
+  text-indent: 188px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+.login article {
+  width: 100%;
+  height: 568px;
+  background: url(../images/dl_bg.jpg);
+  position: relative;
+}
+.login article .box {
+  width: 336px;
+  height: 346px;
+  background: #f2f2f2;
+  position: absolute;
+  top: 50px;
+  right: 210px;
+}
+.login article .box .hui,
+.you {
+  display: inline-block;
+  width: 167px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  border-bottom: 0px;
+  float: left;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  color: #656565;
+  z-index: 333;
+  cursor: pointer;
+}
+.login article .box .hov {
+  background: #f2f2f2;
+  border: 1px solid #cccccc;
+  border-bottom: 0px;
+}
+.login article .box form {
+  width: 336px;
+  height: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-top: 46px;
+}
+.login article .box form input {
+  width: 248px;
+  height: 48px;
+  line-height: 20px;
+  color: #cecece;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  text-indent: 20px;
+  background: #fff;
+}
+.login article .box form .btn {
+  margin-top: 10px;
+  background: #599532;
+  color: #fff;
+  text-indent: 0;
+  cursor: pointer;
+}
+.login article .box form p {
+  /*/*height: 35px;*/
+  /*line-height: 35px;*/
+  color: #ccc;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+/*# sourceMappingURL=login.css.map */
