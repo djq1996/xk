@@ -185,25 +185,51 @@ li {
   margin: -1px 0 0 161px;
   background: #f2f2f2;
   border: 1px solid #bfbfbf;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+.register .main div form p{
+	height: 45px;
+	line-height: 45px;
+}
+
+.register .main div form b{
+	display: inline-block;
+	width:200px;
+	text-align: right;
+	font-weight: 200;
+	font-family: "微软雅黑";
+	padding-right: 30px;
 }
 .register .main div form input {
   display: inline-block;
-  width: 338px;
-  height: 48px;
+  width: 300px;
+  height: 25px;
   border: 1px solid #bfbfbf;
-  margin-left: 100px;
   color: #cecece;
-  font-size: 20px;
-  line-height: 48px;
+  font-size: 1px;
+  line-height: 25px;
   font-family: "微软雅黑";
-  text-indent: 20px;
+  text-indent: 5px;
+  box-shadow: -2px -2px #DCDCDC;
+}
+.register .main div form span {
+  display: block;
+  height: 15px;
+  line-height:11px;
+  color: #c0c0c0;
+  font-size: 12px;
+  padding-left: 20px;
+  text-indent: 200px;
+}
+.register .main div form .cen{
+	text-align: center;
 }
 .register .main div form .check {
   width: 20px;
   height: 20px;
   line-height: 20px;
   margin-top: 11px;
+  
 }
 .register .main div form strong {
   font-weight: 200;
@@ -214,37 +240,21 @@ li {
 .register .main div form strong a {
   color: #046e9f;
 }
-.register .main div form .yzm {
-  width: 158px;
-}
-.register .main div form p span {
-  display: inline-block;
-  width: 165px;
-  height: 38px;
-  color: #656565;
-  font-size: 12px;
-  line-height: 20px;
-  padding-left: 20px;
-}
-.register .main div form p span button {
-  width: 108px;
-  height: 37px;
-  border: 1px solid #b8b8b8;
-  border-radius: 10px;
-  font-family: "微软雅黑";
-}
 .register .main div form .btn {
   display: block;
   width: 340px;
   height: 50px;
-  margin: 0 auto;
   color: #fff;
   background: #2c9948;
-  margin-top: 33px;
+  margin:10px auto 0 auto;
+  font-family: "微软雅黑";
+  font-size: 18px;
 }
-.register .main div form p {
-  height: 70px;
-  line-height: 70px;
+.register .main div form select{
+	width: 300px;
+	height: 30px;
+	border: 1px solid #bfbfbf;
+	color: #333;
 }
 .register .footer {
   width: 100%;
