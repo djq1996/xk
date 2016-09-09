@@ -134,6 +134,9 @@ banner{
 .news1_c,.news2_c{
 	border-bottom: 1px solid #e6e6e6;
 }
+h2{
+	font-size: 20px;
+}
 .xmtjTitle_c{
 	display: block;
 	width: 319px;

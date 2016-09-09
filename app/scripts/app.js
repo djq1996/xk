@@ -50,6 +50,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('index.zczxS', {
 		url: '/zczxS#1',
 		templateUrl: 'views/zczxS.html',
+	}).state('index.syb', {
+		url: '/syb#1',
+		templateUrl: 'views/syb.html',
+	}).state('index.sybZx', {
+		url: '/sybZx',
+		templateUrl: 'views/sybZx.html',
+		controller: 'lj'
+	}).state('index.sybTj', {
+		url: '/sybTj',
+		templateUrl: 'views/sybTj.html'
 	})
 	$urlRouterProvider.when('', '/index/zhuye');
 

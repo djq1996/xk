@@ -33,6 +33,9 @@ angular.module('yuanjinweiApp')
 		$scope.sprz = function() {
 			$state.go('index.sprz')
 		}
+		$scope.CYpTcl = function() {
+			$state.go('index.syb')
+		}
 		$('#znav ul li').hover(function() {
 			$(this).find('ol').stop().animate({
 				width: "100%",
@@ -58,5 +61,14 @@ angular.module('yuanjinweiApp')
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
 			$state.go('index.zczxS')
+		}
+	})
+	.controller('lj', function($scope, $http, $state) {
+		$scope.ImgClick = function() {
+			$state.go('index.sybZx')
+		}
+		$scope.xqxwLj = function() {
+			alert(99)
+			$state.go('index.sybTj')
 		}
 	})
