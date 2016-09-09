@@ -130,6 +130,9 @@ select {
 	overflow: hidden;
 	position: relative;
 }
+#index_banner{
+	width:100%;
+	}
 #index_banner ul li{
 	float: left;
 }

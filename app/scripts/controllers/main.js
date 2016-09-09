@@ -68,7 +68,7 @@ angular.module('yuanjinweiApp')
 			$state.go('index.sybZx')
 		}
 		$scope.xqxwLj = function() {
-			alert(99)
+	
 			$state.go('index.sybTj')
 		}
 	})
