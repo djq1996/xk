@@ -185,7 +185,7 @@ select {
   vertical-align: middle;
 }
 #qb {
-  width: 100%;
+  min-width: 1026px;
   height: 1264px;
   background: #f7f7f7;
   margin: 0 auto;
@@ -211,6 +211,7 @@ select {
   background: #FFF;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
   border: 1px solid #d9d9d9;
   -webkit-box-shadow: #d9d9d9 0px 0px 10px;
   -moz-box-shadow: #d9d9d9 0px 0px 10px;
