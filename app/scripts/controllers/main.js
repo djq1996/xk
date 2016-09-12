@@ -72,3 +72,50 @@ angular.module('yuanjinweiApp')
 			$state.go('index.sybTj')
 		}
 	})
+	.controller('index', function($scope, $http, $state) {
+		
+	
+	var aimg=$('#index_banner div img');
+	var timer=null;
+	var index=0;
+	
+	
+	$('#index_banner div').hover(
+		function(){
+			clearInterval(timer)	
+		},function(){
+			timer=setInterval(function(){
+				index++
+				if(index==aimg.length){
+					index=0;
+				}
+				aimg.eq(index).fadeIn().siblings().fadeOut();
+				
+			},3000)
+	}).trigger('mouseleave');
+	})	
+
+
+	
+	.controller('lunbo', function($scope, $http, $state) {
+	   
+			var aimg=$('#lunbo img');
+	var timer=null;
+	var index=0;
+	
+	
+	$('#lunbo').hover(
+		function(){
+			clearInterval(timer)	
+		},function(){
+			timer=setInterval(function(){
+				index++
+				if(index==aimg.length){
+					index=0;
+				}
+				aimg.eq(index).fadeIn().siblings().fadeOut();
+				
+			},3000)
+	}).trigger('mouseleave');
+	})
+	

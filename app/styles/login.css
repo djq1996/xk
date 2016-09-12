@@ -120,7 +120,7 @@ select {
   line-height: 40px;
   background: url(../images/nav_bg.png);
   color: #fff;
-  text-indent: 188px;
+ padding-bottom:20px; 
   font-size: 18px;
   font-family: "微软雅黑";
 }
