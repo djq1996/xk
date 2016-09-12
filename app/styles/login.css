@@ -115,7 +115,7 @@ select {
   vertical-align: middle;
 }
 .login .title {
-  width: 100%;
+  min-width: 1026px;
   height: 40px;
   line-height: 40px;
   background: url(../images/nav_bg.png);
@@ -136,7 +136,7 @@ select {
   background: #f2f2f2;
   position: absolute;
   top: 50px;
-  right: 210px;
+  right: 10%;
 }
 .login article .box .hui,
 .you {

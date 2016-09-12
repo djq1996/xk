@@ -185,11 +185,9 @@ select {
   vertical-align: middle;
 }
 #qb {
-  width: 100%;
+  min-width: 1026px;
   height: 1750px;
   background: #f7f7f7;
-  margin: 0 auto;
-  padding: 20px;
 }
 #content {
   width: 1026px;
