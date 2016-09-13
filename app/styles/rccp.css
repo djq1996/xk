@@ -117,7 +117,7 @@ select {
   width: 100%;
 }
 .banner {
-  width: 100%;
+  min-width: 1026px;
   height: 500px;
   overflow: hidden;
   position: relative;
@@ -248,18 +248,19 @@ select {
   color: #fd6464;
 }
 .zai {
-  width: 100%;
+  min-width: 1026px;
   height: 655px;
   background: #f7f7f7;
 }
 .zaixian {
-  width: 1030px;
+  width: 1026px;
   height: 540px;
   margin: 0 auto;
   padding-top: 50px;
+  background: #f7f7f7;
 }
 .zaix {
-  width: 1030px;
+  width: 1026px;
   height: 365px;
 }
 .zaix .left {
@@ -310,8 +311,7 @@ select {
   width: 345px;
   height: 470px;
   border: 1px solid #bfbfbf;
-  float: left;
-  margin-left: 23px;
+  float: right;
 }
 .zaix .right .xin {
   height: 40px;
@@ -352,7 +352,8 @@ select {
   font-weight: bold;
 }
 .zai .he {
-  width: 1030px;
+  width: 1026px;
+  background: #F7F7F7;
   height: 60px;
   border: 1px solid #bfbfbf;
   margin: 0 auto;

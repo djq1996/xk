@@ -17,6 +17,7 @@ a{
   height: 30px;
   margin: 0 auto;
   padding-left: 20px;
+  background: #34a150;
 }
 .sheader_s a:first-child {
   line-height: 30px;
@@ -79,6 +80,7 @@ a{
   width: 1026px;
   height: 102px;
   margin: 0 auto;
+  background-image: url(../images/bj.png);
 }
 .slogo img {
   margin-left: -35px;
@@ -99,13 +101,12 @@ a{
 }
 
 #znav {
-  width: 50%;
+  width: 690px;
   height: 35px;
-  margin: 0 auto;
-  
-  
+  margin: 0 auto; 
 }
 #znav a {
+	cursor: pointer;
   font-size: 15px;
   display: block;
   text-align: center;
@@ -156,17 +157,18 @@ a{
 	}
 	
 #food {
-	padding-top: 30px;
   width: 100%;
   height: 311px;
   background: #2d2d2d;
   border-top: 1px solid #929292;
 }
 .food_top{
-	width:1023px;
-	height:180px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	width:1026px;
+	height:311px;
 	margin: 0 auto;
-	margin-bottom: 56px;
+	background: #2d2d2d;
 }
 .food_top ul{
 	width:100%;
@@ -192,7 +194,6 @@ a{
 		width:125px;
 		display: block;
 		margin-top:25px ;
-	
 		font-size: 8px;
 	
 	}
@@ -225,15 +226,16 @@ a{
 	margin-bottom: 8px;
 }
 .food_bottom{
-	width:100%;
+	min-width:1026px;
 	height:48px;
 	border-top: 1px solid #929292;
 	background:#262626;
 }
 .food_c{
-	width:1023px;
+	width:1026px;
 	height:48px;
 	margin: 0 auto;
+	background:#262626;
 }
 .food_c a:first-child{
 	float: left;
