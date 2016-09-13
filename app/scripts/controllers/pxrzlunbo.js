@@ -18,7 +18,7 @@ $(function() {
 		
 		        //�Զ�
 		        var i = 0;
-		        var t = setInterval(move,500);
+		        var t = setInterval(move,3000);
 		        //��������ĺ���
 		        function moveLeft() {
 		            i--;
