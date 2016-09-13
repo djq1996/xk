@@ -122,4 +122,16 @@ input {
 button {
   outline: none;
 }
+.clear{
+    *zoom: 1;
+    display: block;
+}
+.clear:after{
+    content: "clear";
+    height: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+}
 /*# sourceMappingURL=reset.css.map */

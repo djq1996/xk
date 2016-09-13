@@ -7,22 +7,24 @@ bg{
 }
 .content_c{
 	width: 1026px;
-	height: 2275px;
+	/*height: 1500px;*/
 	background: #FFFFFF;
 	box-shadow: 0px 0px 2px 1px #d9d9d9;
 	margin: 0 auto;
 }
 .leftBox_c{
 	width: 665px;
-	height: 2275px;
+	height: auto;
 	float: left;
 	margin-left: 10px;
+	padding-bottom: 50px;
 }
 .rightBox_c{
 	width: 319px;
-	height: 2275px;
+	height: auto;
 	float: right;
 	margin-right: 10px;
+	padding-bottom: 50px;
 }
 banner{
 	width: 665px;
@@ -33,6 +35,7 @@ banner{
 	margin: 9px 0px 19px;
 }
 .bannerBox_c{
+	position: absolute;
 	width: 400%;
 	height: 321px;
 }
@@ -65,7 +68,17 @@ banner{
 	background: #009933;
 	color: #fff;
 }
+a.xmtjContent_c{
+	background: #009933;
+	color: #fff;
+}
 .informationBox_c{
+	display: none;
+	width: 665px;
+	height: auto;
+	float: left;
+}
+.informationBox1_c{
 	display: block;
 	width: 665px;
 	height: auto;
@@ -85,6 +98,9 @@ banner{
 	height: 126px;
 	float: left;
 }
+.informationBox_c li img:hover{
+	cursor: pointer;
+}
 .informationBox_c li h3{
 	display: block;
 	width: 482px;
@@ -95,6 +111,43 @@ banner{
 	color: #252525;
 	margin: 0px 0px 10px;
 }
+.informationBox_c li h3:hover{
+	cursor: pointer;
+	color: orangered;
+	text-decoration: underline;
+}
+.informationBox1_c li{
+	display: block;
+	width: 665px;
+	height: 143px;
+	border-bottom: 1px solid #e5e5e5;
+	float: left;
+	margin: 0px 0px 17px;
+}
+.informationBox1_c li img{
+	display: block;
+	width: 182px;
+	height: 126px;
+	float: left;
+}
+.informationBox1_c li img:hover{
+	cursor: pointer;
+}
+.informationBox1_c li h3{
+	display: block;
+	width: 482px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	padding-left: 24px;
+	color: #252525;
+	margin: 0px 0px 10px;
+}
+.informationBox1_c li h3:hover{
+	cursor: pointer;
+	color: orangered;
+	text-decoration: underline;
+}
 .text_c{
 	display: block;
 	width: 450px;
@@ -103,36 +156,28 @@ banner{
 	float: left;
 	padding-left: 24px;
 	font-size: 12px;
-}
-.text_c a{
 	color: #666666;
 }
-.text_c a:hover{
-	color: orangered;
-}
-.rightBox_c div{
+.news1_c{
 	width: 319px;
 	height: 114px;
 	float: left;
 }
-.rightBox_c div h2{
+.news1_c h2{
 	width: 100%;
 	line-height: 50px;
 	color: #333333;	
 }
-.rightBox_c div p{
+.news1_c h2:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	color: orangered;
+}
+.news1_c p{
 	width: 100%;
 	line-height: 25px;
 	font-size: 12px;
-}
-.rightBox_c div p a{
 	color: #666666;
-}
-.rightBox_c div p a:hover{
-	color: orangered;
-}
-.news1_c,.news2_c{
-	border-bottom: 1px solid #e6e6e6;
 }
 h2{
 	font-size: 20px;
@@ -149,18 +194,28 @@ h2{
 	padding-left: 16px;
 	margin: 7px 0px 0px;
 }
+.xmtjContentBox_c{
+	width:319px;
+	height: 604px;
+	float: left;
+	overflow: hidden;
+}
 .xmtjContent_c{
+	position: relative;
+	left: 0;
+	top: 0;
 	display: block;
 	width: 319px;
-	height: 1076px;
+	height: 604px;
 	float: left;
 }
 .xmtjContent_c li{
 	display: block;
 	width: 319px;
 	height: 131px;
-	margin: 20px 0px;
+	margin: 20px 0px 0px;
 	border: 1px solid #f2f2f2;
+	float: left;
 }
 .xmtjContent_c li img{
 	display: block;
@@ -179,6 +234,7 @@ h2{
 	font-size: 12px;
 }
 .xmtjContent_c li a:hover{
+	cursor: pointer;
 	text-decoration: underline;
 }
 
@@ -197,7 +253,7 @@ h2{
 .xmtjContent2_c{
 	display: block;
 	width: 319px;
-	height: 1076px;
+	height: auto;
 	float: left;
 }
 .xmtjContent2_c li{
@@ -293,20 +349,20 @@ sybTjBg{
 }
 .content1_c{
 	width: 1024px;
-	height: 1126px;
+	height: auto;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 2px 1px #d9d9d9;
 	margin: 0 auto;
 }
 .leftBox1_c{
 	width: 636px;
-	height: 1126px;
+	height: auto;
 	float: left;
 	margin-left: 22px;
 }
 .rightBox1_c{
 	width: 319px;
-	height: 1126px;
+	height: auto;
 	float: right;
 	margin-right: 22px;
 	padding-top: 10px;
@@ -330,9 +386,9 @@ sybTjBg{
 }
 .tjText_c{
 	width: 636px;
-	height: 322px;
+	height: auto;
 	float: left;
-	padding-top: 22px;
+	padding: 22px;
 }
 .tjText_c p{
 	line-height: 20px;
@@ -494,8 +550,7 @@ sybZxBg{
 }
 .sybZx_content_c{
 	width: 1024px;
-	height: 1450px;
-	margin: 0 auto 18px;
+	margin: 0 auto;
 	background: #FFFFFF;
 	padding: 0 97px;
 }
@@ -513,8 +568,8 @@ sybZxBg{
 }
 .sybZx_text_c{
 	width: 828px;
-	height: 980px;
-	padding-top: 32px;
+	height: auto;
+	padding:32px 0px 50px;
 }
 .sybZx_text_c p{
 	font-size: 12px;
