@@ -51,12 +51,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/zczxS#1',
 		templateUrl: 'views/zczxS.html',
 	}).state('index.syb', {
-		url: '/syb#1',
+		url: '/syb',
 		templateUrl: 'views/syb.html',
+		controller: 'syb_c'
 	}).state('index.sybZx', {
 		url: '/sybZx',
 		templateUrl: 'views/sybZx.html',
-		controller: 'lj'
+		controller: 'lj1'
 	}).state('index.sybTj', {
 		url: '/sybTj',
 		templateUrl: 'views/sybTj.html'
