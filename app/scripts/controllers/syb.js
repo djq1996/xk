@@ -32,19 +32,19 @@ angular.module('yuanjinweiApp')
          	if(parseInt($(".xmtjContent_c").css("top"))<=-$(".xmtjContent_c").height()){
         		$(".xmtjContent_c").css("top","0px")
         	}else{
-        	$(".xmtjContent_c").css("top",parseInt($(".xmtjContent_c").css("top"))-6+'px')
+        	$(".xmtjContent_c").animate({"top":parseInt($(".xmtjContent_c").css("top"))-1+'px'},0)
         	}
          }
         tim=setInterval(function(){
         	zongxiang()
-        },50)
+        },24)
 	    $(".xmtjContentBox_c").mouseover(function(){
 	    	clearInterval(tim)
 	    })
 	    $(".xmtjContentBox_c").mouseout(function(){
 	    	tim=setInterval(function(){
-        	zongxiang()
-        },50)
+	        	zongxiang()
+	        },24)
 	    })
 //------------------------字体隐藏----------------------------	
 //      $(".text_title_c").html($(".text_title_c").html().slice(0,15)+'……');
