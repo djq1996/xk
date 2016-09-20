@@ -152,11 +152,13 @@ overflow: hidden;
 	position: absolute;
 	left: 10%;
 	top: 183px;
+	z-index:888;
 }
 #index_banner .index_banner_right{
 	position: absolute;
 	right: 10%;
 	top: 183px;
+	z-index:888;
 }
 
 
