@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
   font-family: myfont;
   src: url(../svg/fonts/Oxygen-Regular.ttf);
-}
+}*/
 html,
 body,
 div,
@@ -71,7 +71,7 @@ time,
 mark,
 audio,
 video {
-  font-family: myfont;
+  font-family: "宋体";
   margin: 0;
   padding: 0;
   border: 0;
@@ -237,7 +237,7 @@ select {
 }
 #sp-lf-t-1 {
   width: 629px;
-  height: 45px;
+  height: 46px;
   border-bottom: 1px solid #bfbfbf;
   border-right:1px solid #bfbfbf;
   background:#f7f7f7;
