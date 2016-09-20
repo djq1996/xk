@@ -8,24 +8,25 @@
 				<section class="leftBox_c">
 					<banner>
 						<div class="bannerBox_c">
-							<img ng-click='ImgClick()' src="../images/banner1_c.png" />
+							<lunbosybc></lunbosybc>
+							<!--<img ng-click='ImgClick()' src="../images/banner1_c.png" />
 							<img src="../images/banner1_c.png" />
 							<img src="../images/banner1_c.png" />
-							<img src="../images/banner1_c.png" />
+							<img src="../images/banner1_c.png" />-->
 						</div>
 					</banner>
 					<div class="tabControl_c">
-						<a href="javascript:;" class="tabControlLeft_c">创业资讯</a>
-						<a href="javascript:;" class="tabControlRight_c">创业故事</a>
+						<a href="javascript:;" class="tabControlLeft_c" ng-class='tabnav_left' ng-click="clickleft()">创业资讯</a>
+						<a href="javascript:;" class="tabControlRight_c" ng-class='tabnav_right' ng-click="clickright()">创业故事</a>
 					</div>
-					<ul class="informationBox_c">
+					<ul class="informationBox_c" ng-show='conter_left'>
 						<li>
 							<img src="../images/information1_c.png" />
 							<h3 class="text_title_c">中国互联网出来：小步试错到大步投</h3>
 							<p class="text_c">俺是个大神哈时，你，按时大世界科技客服哈发贺卡的恢复速度快卡上始啊数据量大数据量大</p>
 						</li>
 					</ul>
-					<ul class="informationBox1_c">
+					<ul class="informationBox1_c" ng-show='conter_right'>
 						<li>
 							<img src="../images/information1_c.png" />
 							<h3 class="text_title_c">小步试错到大步投资，按实际噶就是噶设</h3>
@@ -51,7 +52,8 @@
 					<p class="xmtjTitle_c">项目推荐</p>
 					<div class="xmtjContentBox_c">
 					<ul class="xmtjContent_c" >
-						<li>
+						<lunbosybc1></lunbosybc1>
+						<!--<li>
 							<img src="../images/recommend1.png" />
 							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
 							<a ng-click='xqxwLj()'>[详情]</a>
@@ -71,6 +73,11 @@
 							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
 							<a ng-click='xqxwLj()'>[详情]</a>
 						</li>
+						<li>
+							<img src="../images/recommend1.png" />
+							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
+							<a ng-click='xqxwLj()'>[详情]</a>
+						</li>-->
 					</ul>
 					</div>
 					<p class="rmjyTitle_c">热门就业信息</p>

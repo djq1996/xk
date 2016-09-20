@@ -157,7 +157,7 @@ a{
 	}
 	
 #food {
-  width: 100%;
+  min-width: 1026px;
   height: 311px;
   background: #2d2d2d;
   border-top: 1px solid #929292;
@@ -166,7 +166,7 @@ a{
 	padding-top: 30px;
 	box-sizing: border-box;
 	width:1026px;
-	height:311px;
+	height:310px;
 	margin: 0 auto;
 	background: #2d2d2d;
 }
@@ -233,7 +233,7 @@ a{
 }
 .food_c{
 	width:1026px;
-	height:48px;
+	height:47px;
 	margin: 0 auto;
 	background:#262626;
 }
