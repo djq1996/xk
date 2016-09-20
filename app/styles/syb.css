@@ -68,12 +68,11 @@ banner{
 	background: #009933;
 	color: #fff;
 }
-a.xmtjContent_c{
+a.tabControlHover_c{
 	background: #009933;
 	color: #fff;
 }
 .informationBox_c{
-	display: none;
 	width: 665px;
 	height: auto;
 	float: left;
@@ -281,7 +280,7 @@ h2{
 	line-height: 20px;
 	margin: 5px 0px 0px 10px;
 	font-size: 12px;
-	color: #8c8c8c;
+	color: #000;
 	float: left;
 }
 .rmjyTitle_c{
@@ -327,7 +326,7 @@ h2{
 /*-----------------------------sybTj-------------------------------*/
 sybTjBg{
 	display: block;
-	width: 100%;
+	min-width: 1026px;
 	height: auto;
 	background: #f7f7f7;
 }
@@ -528,7 +527,7 @@ sybTjBg{
 /*----------------------------sybZx------------------------------*/
 sybZxBg{
 	display: block;
-	width: 100%;
+	min-width: 1026px;
 	height: auto;
 	background: #f7f7f7;
 }
@@ -555,7 +554,7 @@ sybZxBg{
 	padding: 0 97px;
 }
 .sybZx_content_c h1{
-	width: 1024px;
+	width: 100%;
 	height: 70px;
 	line-height: 70px;
 	font-size: 30px;

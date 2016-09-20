@@ -1,7 +1,7 @@
-@font-face {
+/*@font-face {
   font-family: myfont;
   src: url(../svg/fonts/Oxygen-Regular.ttf);
-}
+}*/
 html,
 body,
 div,
@@ -71,7 +71,7 @@ time,
 mark,
 audio,
 video {
-  font-family: myfont;
+  font-family: "宋体";
   margin: 0;
   padding: 0;
   border: 0;
@@ -214,7 +214,10 @@ select {
 	position: absolute;
 	left:0;
 	top:0;
-	display: none;
+	display:none;
+}
+#rm .img li:first-child{
+	display: block;
 }
 #rm .num {
 	position: absolute;
@@ -240,18 +243,18 @@ select {
 #rm .num li.active {
 	background:#a00;
 }
-#rm .btn {
+#rm .btnpeixun {
 	position:absolute;
-	top:50%;
-	margin-top:-30px;
+	top:138px;
 	width: 30px;
 	height: 60px;
-	line-height:60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 40px;
 	background:rgba(0, 0, 0, 0.5);
-	font-size:40px;
 	color: #fff;
-	text-align:center;
-	display: none;
+	display: block;
+	cursor: pointer;
 }
 #rm .left {
 	left:0;
