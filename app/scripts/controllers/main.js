@@ -36,6 +36,9 @@ angular.module('yuanjinweiApp')
 		$scope.CYpTcl = function() {
 			$state.go('index.syb')
 		}
+		$scope.xxkZc = function(e) {
+			$scope.nba=e;
+		}
 		$('#znav ul li').hover(function() {
 			$(this).find('ol').stop().animate({
 				width: "100%",
@@ -61,6 +64,16 @@ angular.module('yuanjinweiApp')
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
 			$state.go('index.zczxS')
+		}
+		$scope.leftZc = function(e,k) {
+			$scope.cba=e;
+			if(k==0){
+				$scope.cc="mainConterLeftHeActive";
+				$scope.vv='';
+			}else{
+				$scope.vv="mainConterLeftHeActive";
+				$scope.cc='';
+			}
 		}
 	})
 	.controller('lj', function($scope, $http, $state) {

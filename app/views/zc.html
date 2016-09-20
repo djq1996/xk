@@ -1,5 +1,5 @@
 
-<div>
+<div ng-controller='zc'>
 	<div class='zc-main'>
 		<div class='zc-mainContext'>
 			<!--中间的内容左边-->
@@ -16,125 +16,49 @@
 				</div>
 				<ul class='mainContextLiftUl'>
 					<li>
-						<a href="javascript:;">政策信息</a>
+						<a href="javascript:;" ng-click="xxkZc('erYm')">政策信息</a>
 					</li>
 					<li>
-						<a href="javascript:;">就业指南</a>
-					</li>
-					<li>
-						<a href="javascript:;">电商资讯</a>
-					</li>
-					<li>
-						<a href="javascript:;">通知公告</a>
+						<a href="javascript:;" ng-click="xxkZc('zhiNan')">就业指南</a>
 					</li>
 				</ul>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
+				<div ng-switch='nba'>
+					<!--政策信息-->
+					<div class='mainautoConter' ng-switch-default> 
+						<div class='zc-mainauto'>
+							<h1 class='zc-mainautoH'>ssss</h1>
+							<hr />
+							<div class='timeUl'>
+								<span>2014-08-08　16:04</span>
+								<span>阅读数：2248</span>
+								<span>评论：2</span>
+							</div>
+							<div class='zc-center'>
+								<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
+								<img src="../images/2_03.jpg" alt="" />
+							</div>
+						</div>
+						<div class='zc-ghy'>更多行业资讯</div>
 					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/2_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/6_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/6_06.jpg" alt="" />
+					<!--就业指南-->
+					<div class='mainautoConter' ng-switch-when="zhiNan">
+						<div class='zc-mainauto'>
+							<h1 class='zc-mainautoH'>教育部：教育部日前发文要求做好离校未就业高校毕</h1>
+							<hr />
+							<div class='timeUl'>
+								<span>2014-08-08　16:04</span>
+								<span>阅读数：2248</span>
+								<span>评论：2</span>
+							</div>
+							<div class='zc-center'>
+								<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
+								<img src="../images/6_06.jpg" alt="" />
+							</div>
+						</div>
+						<div class='zc-ghy'>更多行业资讯</div>
 					</div>
 				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/6_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/2_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/6_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/6_06.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-mainauto'>
-					<h1 class='zc-mainautoH'>教育部：力争每一名未就业大学生半年内就业</h1>
-					<hr />
-					<div class='timeUl'>
-						<span>2014-08-08　16:04</span>
-						<span>阅读数：2248</span>
-						<span>评论：2</span>
-					</div>
-					<div class='zc-center'>
-						<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-						<img src="../images/2_03.jpg" alt="" />
-					</div>
-				</div>
-				<div class='zc-ghy'>更多行业资讯</div>
 			</div>
-
 			<!--中间的内容右边-->
 			<div class='zc-mainContextRight'>
 				<div class='zvrigrm'>热门培训信息</div>

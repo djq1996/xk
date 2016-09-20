@@ -6,79 +6,35 @@
 			<!--内容左-->
 			<div class='mainConterLeft'>
 				<div class='mainConterLeftHer'>
-					<p>政策信息</p>
-					<p>就业指南</p>
-					<p>电商资讯</p>
-					<p>通知公告</p>
+					<a  ng-click='leftZc("leftXx",0)' ng-class='cc'>政策信息</a>
+					<a  ng-click='leftZc("leftZn",1)' ng-class='vv'>就业指南</a>
 				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">北京地区2014年上半年高校毕业生系</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
+				<div ng-switch='cba'>
+					<!--政策信息-->
+					<div ng-switch-default >
+						<div class='leftRightMain'>
+							<p class='leftRightMainP' ng-click="zc()">泸溪县公路局召开领导班子专题民主生活会</p>
+							<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
+						</div>
+						<div class='leftRightMain'>
+							<p class='leftRightMainP' ng-click="zc()">长沙：保障进城务工子女100%公办学校就读 </p>
+							<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
+						</div>
+					</div>
+					<!--就业指南-->
+					<div ng-switch-when="leftZn">
+						<div class='leftRightMain'>
+							<p class='leftRightMainP' ng-click="zc()">保障进城务工子女100%公办学校就读 </p>
+							<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
+						</div>
+						<div class='leftRightMain'>
+							<p class='leftRightMainP' ng-click="zc()">泸溪县公路局召开领导班子专题民主生活会</p>
+							<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
+						</div>
+						
+					</div>
 				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">教育部：力争每一名未就业大学生毕业半年内就业</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">大学生中央国家机关实习计划试点工作启动</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">中国赴美投资移民首现财政年度结束前名额用磬 </p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">大学生“网选”宿舍恶习 “影响他人休息”高居榜</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">中国全年助学投入资金逾千亿 财政拨款占七成</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()"> 河南一高中发布 “最严校规”</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">要求确保每一位新生 不因家庭经济困难而失学 </p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">两广爱心人士瑶山送温暖</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">重庆市巴南区中小学卫生保健所汽车项目</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">人民日报一线思考：公务员职级与待遇如何挂钩</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">家庭开学频“移民” 专家：学区房非优质教育捷径</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">9月小学生将使用新教材 从纸张到内容都有变化 </p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">屯溪区多举措促进就业创业 </p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">河北调整研究生资助政策 公办高校学费没有上涨</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">泸溪县公路局召开领导班子专题民主生活会</p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
-				<div class='leftRightMain'>
-					<p class='leftRightMainP' ng-click="zc()">长沙：保障进城务工子女100%公办学校就读 </p>
-					<p class='leftRightMainPEr' ng-click="zc()">2014-6-14</p>
-				</div>
+				
 				<ul class='paging'>
 					<li class='pagingfast'>上一页</li>
 					<li class='paginglast maLlast'>1</li>
