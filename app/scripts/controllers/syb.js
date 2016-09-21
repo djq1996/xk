@@ -1,5 +1,5 @@
 angular.module('yuanjinweiApp')
-	.controller('syb_c', function($scope, $http, $state) {
+	.controller('syb_c', function($scope, $http, $state,$stateParams) {
 		$scope.syb_c_lunbo=[
 	{option: "banner1_c.png"},
 	{option: "banner1_c.png"},
@@ -106,89 +106,6 @@ function first(obj) { //第一个节点的
 		    }
 		}
 	})
-
-//------------------------纵向轮播----------------------------	
-//       var tim=null;
-//       $(".xmtjContent_c").html($(".xmtjContent_c").html()+$(".xmtjContent_c").html())
-//       function zongxiang(){
-//       	if(parseInt($(".xmtjContent_c").css("top"))<=-$(".xmtjContent_c").height()){
-//      		$(".xmtjContent_c").css("top","0px")
-//      	}else{
-//      	$(".xmtjContent_c").animate({"top":parseInt($(".xmtjContent_c").css("top"))-1+'px'},0)
-//      	}
-//       }
-//      tim=setInterval(function(){
-//      	zongxiang()
-//      },24)
-//	    $(".xmtjContentBox_c").mouseover(function(){
-//	    	clearInterval(tim)
-//	    })
-//	    $(".xmtjContentBox_c").mouseout(function(){
-//	    	tim=setInterval(function(){
-//	        	zongxiang()
-//	        },24)
-//	    })
-//---------------------------className兼容-------------------------
-//var tim=null;
-//function getClass(className) { //className      
-//	if(document.getElementsByClassName) {
-//		return document.getElementsByClassName(className);
-//	} else {
-//		var All = document.getElementsByTagName('*')
-//		var arr = [];
-//		for(var i = 0; i < All.length; i++) {
-//			if(All[i].className == className) {
-//				arr.push(All[i])
-//			}
-//		}
-//		return arr;
-//	}
-//}
-//
-//function first(obj) { //第一个节点的
-//	if(obj.firstElementChild) {
-//		return obj.firstElementChild
-//	} else {
-//		return obj.firstChild
-//	}
-//
-//}
-//var xmtjContent_c=getClass("xmtjContent_c")[0];
-//var xmtjContent_c_css1=xmtjContent_c.currentStyle||window.getComputedStyle(xmtjContent_c,false)
-//function zongxiang(){
-//	 xmtjContent_c.style.top=parseInt(xmtjContent_c_css1.top)-1+'px';
-//	if(parseInt(xmtjContent_c_css1.top)%151==0){
-//		xmtjContent_c.style.top='0px';
-//    xmtjContent_c.appendChild(first(xmtjContent_c))
-//    }
-//}
-//tim=setInterval(zongxiang,30) 
-////----------over停止调用函数，离开再次调用----------
-//xmtjContent_c.onmouseover=function(){
-//	clearInterval(tim)
-//}
-//xmtjContent_c.onmouseout=function(){
-//	tim=setInterval(zongxiang,30) 
-//}
-//------------------------字体隐藏----------------------------	
-//      $(".text_title_c").html($(".text_title_c").html().slice(0,15)+'……');
-//		$(".text_c").html($(".text_c").html().slice(0,85)+'……');
-//		$(".news1_c h2").html($(".news1_c h2").html().slice(0,12)+'……');
-//		$(".news1_c p").html($(".news1_c p").html().slice(0,45)+'……');
-//		$(".xmtjText1_c").html($(".xmtjText1_c").html().slice(0,45)+'……');
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
