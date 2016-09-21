@@ -274,7 +274,7 @@ angular.module('yuanjinweiApp')
                	params:{id:$stateParams.id},
                 method:"GET"
             }).success(function(e){
-            	debugger
+            	//debugger
             	//alert($stateParams.id)
                 $scope.data=e
             })
@@ -311,6 +311,17 @@ angular.module('yuanjinweiApp')
 			})
 			}
 		}
+	}).controller('zjzd',function($scope,$http,$stateParams){
+		 $http({
+                url:"http://123.56.227.177:2503/xiang-zhuanjia",
+               	params:{id:$stateParams.id},
+                method:"GET"
+            }).success(function(e){
+            	//debugger
+            	console.log(e)
+            	//alert($stateParams.id)
+                $scope.data=e
+            })
 	})
 
 	

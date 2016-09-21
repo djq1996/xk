@@ -47,8 +47,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/sprz',
 		templateUrl: 'views/sprz.html',
 	}).state('index.zjzd', {
-		url: '/zjzd#1',
+		url: '/zjzd?id',
 		templateUrl: 'views/zhuanjiazhidao.html',
+		controller:'zjzd'
 	}).state('index.zczxS', {
 		url: '/zczxS?id',
 		templateUrl: 'views/zczxS.html',

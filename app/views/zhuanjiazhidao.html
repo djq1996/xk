@@ -4,37 +4,19 @@
 		<p class="weizi">当前所在位置：专家指导 > 专家介绍</p>
 		<div id="zhuanjia_content">
 			<div class="zhuanjia_content_left">
-				<img src="../images/zhuanjia_picture.jpg" />
-				<h1>李鹏</h1>
-				<p>清华远程学堂课程主讲教授。国际经济贸易学院教授，对外经济贸易大学学士、硕士、博士（国际贸易）。伊利诺宜大学（Champaign）福布莱斯特基金访问学者，悉尼科技大学访问学者。对外经济贸易大学国际商务研究中心、电子商务实验室主任，澳大利亚西悉尼大学（UTS）、悉尼科技大学（UWS）商学院营销系客座教授，中国国际贸易学会理论委员会委员 、中国国际经济贸易仲裁委员会仲裁员、山东省淄博市对外经济贸易仲裁委员会仲裁员，擅长实务与法律结合的教学、研究和实践工作。主要擅长领域：国际贸易实务与法律、期货市场理论实务与法律、电子商务与企业发展咨询和教学、国际商务谈判咨询与教学。
-					</p>
-
-				<dl>
-					<dt>主讲课程：</dt>
-					<dd>《电子商务与国际贸易》、《国际贸易实务》、《期货市场》、《商务谈判技巧》</dd>
-					<dt style="padding-bottom: 33px;">学术成果及授课经历参考：</dt>
-					<dd>出版《现代世界期货市场》、《期货市场理论与实务》教材及几十篇论文、专业文章等。在对外经济贸易大学为本科生、研究生讲授《国际贸易实务》、《国际货物买卖合同》、《国际经济合作方式》、《电子商务》等课程；为对外经济贸易大学留学生部的欧美留学生开设并讲授《中国商务实践》课程（英语）；任北京国际商务学院兼职教授，讲授《国际商法》、《国际市场营销》、《电子商务》等课程。任北京大学光华管理学院兼职教师，讲授《商业谈判》课程。</dd>
-				</dl>
-				<p>资讯来源： 发布人： 中国大学生就业培训网</p>
-				<p>【查看评论】(已有 0 条评论) </p>
+				<div id="">
+					<h1><img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{data.img}}" />{{data.name}}</h1>
+				
+				</div>
+				
+					<br /><br />
+				<p ng-bind-html='data.content'></p>
+				
 			</div>
-			<div class="zhuanjia_content_right">
-				<h1><span>专家咨询</span></h1>
-				<ul>
-					<li ng-repeat = 'x in data'>
-						<img ng-src="http://123.56.227.177/bi/public/xiang-upload/images/{{x.img}}" class="xinxi_left" />
-						<div class="xinxi_right">
-							<p>李鹏</p>
-							<p>中国著名教育家</p>
-							<p>清华远程课堂主讲教授</p>
-							<button>免费在线咨询</button>
-						</div>
-					</li>
-					
-				</ul>
-				<img src="../images/zhuanjia_erweima.jpg" class="zhuanjia_erweima" />
-			</div>
+			
 		</div>
 	</div>
 
 </div>
+
+				
