@@ -63,6 +63,7 @@ angular.module('yuanjinweiApp')
 	})
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
+			console.log(1)
 			$state.go('index.zczxS')
 		}
 		$scope.leftZc = function(e,k) {

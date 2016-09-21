@@ -32,7 +32,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: 'views/zhuan-jia1.html',
 		controller: 'z_j'
 	}).state('index.zcxx', {
-		url: '/zcxx',
+		url: '/zcxx?1',
 		templateUrl: 'views/zczxX.html',
 		controller: 'zc'
 	}).state('index.rencai', {
@@ -48,7 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/zjzd#1',
 		templateUrl: 'views/zhuanjiazhidao.html',
 	}).state('index.zczxS', {
-		url: '/zczxS#1',
+		url: '/zczxS',
 		templateUrl: 'views/zczxS.html',
 	}).state('index.syb', {
 		url: '/syb',
