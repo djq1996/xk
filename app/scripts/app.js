@@ -9,6 +9,7 @@
  * Main module of the application.
  */
 var app = angular.module('yuanjinweiApp', ['ui.router','ngSanitize']);
+
 app.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state('index', {
 		url: '/index',
@@ -17,6 +18,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('index.zhuye', {
 		url: '/zhuye',
 		templateUrl: 'views/zhuye.html',
+		controller:'index'
 	}).state('login', {
 		url: '/login',
 		templateUrl: 'views/login.html',
@@ -32,7 +34,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: 'views/zhuan-jia1.html',
 		controller: 'z_j'
 	}).state('index.zcxx', {
-		url: '/zcxx',
+		url: '/zcxx?1',
 		templateUrl: 'views/zczxX.html',
 		controller: 'zc'
 	}).state('index.rencai', {
@@ -48,8 +50,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		url: '/zjzd#1',
 		templateUrl: 'views/zhuanjiazhidao.html',
 	}).state('index.zczxS', {
-		url: '/zczxS#1',
+		url: '/zczxS?id',
 		templateUrl: 'views/zczxS.html',
+		controller:'detail'
 	}).state('index.syb', {
 		url: '/syb',
 		templateUrl: 'views/syb.html',

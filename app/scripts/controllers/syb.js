@@ -62,6 +62,7 @@ angular.module('yuanjinweiApp')
 			$scope.tabnav_right = "";
 			$scope.conter_left = true;
 			$scope.conter_right = false;
+
 		}
 		$scope.clickright = function() {
 			$scope.tabnav_left = "";
