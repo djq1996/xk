@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var app = angular.module('yuanjinweiApp', ['ui.router','ngSanitize']);
+var app = angular.module('yuanjinweiApp', ['ui.router']);
 app.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state('index', {
 		url: '/index',
@@ -26,7 +26,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: 'views/register.html',
 	}).state('index.zc', {
 		url: '/zc',
-		templateUrl: 'views/zc.html'
+		templateUrl: 'views/zc.html',
 	}).state('index.zj', {
 		url: '/zj',
 		templateUrl: 'views/zhuan-jia1.html',
