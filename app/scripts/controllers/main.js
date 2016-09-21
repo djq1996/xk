@@ -60,6 +60,12 @@ angular.module('yuanjinweiApp')
 		$scope.zjzd = function() {
 			$state.go('index.zjzd')
 		}
+		$http({
+			method:'get',
+			url:'http://123.56.227.177:2503/xiang-zhuanjia'
+		}).success(function(e){
+			$scope.data=e
+		})
 	})
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {

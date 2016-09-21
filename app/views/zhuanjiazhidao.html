@@ -21,8 +21,8 @@
 			<div class="zhuanjia_content_right">
 				<h1><span>专家咨询</span></h1>
 				<ul>
-					<li>
-						<img src="../images/zhuanjia_picture.jpg" class="xinxi_left" />
+					<li ng-repeat = 'x in data'>
+						<img ng-src="http://123.56.227.177/bi/public/xiang-upload/images/{{x.img}}" class="xinxi_left" />
 						<div class="xinxi_right">
 							<p>李鹏</p>
 							<p>中国著名教育家</p>
@@ -30,24 +30,7 @@
 							<button>免费在线咨询</button>
 						</div>
 					</li>
-					<li>
-						<img src="../images/zhuanjia_picture.jpg" class="xinxi_left" />
-						<div class="xinxi_right">
-							<p>李鹏</p>
-							<p>中国著名教育家</p>
-							<p>清华远程课堂主讲教授</p>
-							<button>免费在线咨询</button>
-						</div>
-					</li>
-					<li>
-						<img src="../images/zhuanjia_picture.jpg" class="xinxi_left" />
-						<div class="xinxi_right">
-							<p>李鹏</p>
-							<p>中国著名教育家</p>
-							<p>清华远程课堂主讲教授</p>
-							<button>免费在线咨询</button>
-						</div>
-					</li>
+					
 				</ul>
 				<img src="../images/zhuanjia_erweima.jpg" class="zhuanjia_erweima" />
 			</div>
