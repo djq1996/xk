@@ -67,6 +67,14 @@ angular.module('yuanjinweiApp')
 			$scope.data=e
 		})
 	})
+	.controller('rccp',function ($scope,$http,$state){
+		$http({
+			url:'http://123.56.227.177:2503/xiang-info',
+			method:'get',
+		}).success(function (e){
+			$scope.data = e
+		})
+	})
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
 
@@ -183,17 +191,21 @@ angular.module('yuanjinweiApp')
 	})
 
 	.controller('lunbo', function($scope, $http, $state) {
-	 $scope.indexlunbo1=[
-	{option: "tu_04.png"},
-	{option: "05.jpg"},
-	{option: "06.png"},
-	{option: "07.png"}] 
+	    
+		    $http({
+                url:"http://123.56.227.177:2503/xiang-auto",
+                method:"GET"
+            }).success(function(e){
+            	debugger
+            	//alert($stateParams.id)
+                $scope.data=e
+            })
 	})
 	.directive('lunborccp',function($timeout){
 		return{
 			restrict: 'ECMA',
 		    replace: true,
-		    template:"<img ng-repeat='data in indexlunbo1' ng-src='../images/{{data.option}}'/>",
+		    template:"<img ng-repeat='x in data' ng-src='http://123.56.227.177/bi/public/xiang_upload/images/{{x.img}}'/>",
 		    link:function(scope, elem, attrs){
 		    	$timeout(function() {
 		    	var className_rccp=$('#'+$(elem).parent()[0].id);

@@ -278,12 +278,6 @@ select {
   font-family: '微软雅黑';
   margin-left: 20px;
 }
-.zaix .left .xin span:last-child {
-  float: right;
-  margin-right: 20px;
-  font-size: 12px;
-  color: red;
-}
 .zaix .left .xin a {
   color: #d73a17;
 }
@@ -297,15 +291,19 @@ select {
   float: left;
   margin: 20px 0 0 20px;
 }
-.zaix .left .b_left p {
-  height: 25px;
+.zaix .left .b_left h3{
   line-height: 25px;
   font-family: '微软雅黑';
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
-.zaix .left .b_left p:first-child {
-  font-size: 13px;
-  font-weight: bold;
+.zaix .left .b_left p{
+	line-height: 25px;
+  font-family: '微软雅黑';
+  font-size: 12px;
+  font-weight: 100;
+  
 }
 .zaix .right {
   width: 345px;
@@ -322,12 +320,6 @@ select {
   font-family: '微软雅黑';
   margin-left: 20px;
 }
-.zaix .right .xin span:last-child {
-  float: right;
-  margin-right: 20px;
-  font-size: 12px;
-  color: red;
-}
 .zaix .right .xin a {
   color: #d73a17;
 }
@@ -341,16 +333,25 @@ select {
   float: left;
   margin: 20px 0 0 20px;
 }
-.zaix .right .b_left p {
-  height: 25px;
+.zaix .right .b_left h3{
   line-height: 25px;
   font-family: '微软雅黑';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.zaix .right .b_left p{
+	line-height: 25px;
+  font-family: '微软雅黑';
   font-size: 12px;
+  font-weight: 100;
+  
 }
-.zaix .right .b_left p:first-child {
-  font-size: 13px;
-  font-weight: bold;
-}
+
+
+
+
+
 .zai .he {
   width: 1026px;
   background: #F7F7F7;
