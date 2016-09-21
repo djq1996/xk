@@ -35,7 +35,7 @@
 	font-size: 16px;
 }
 .mainContextLiftTopRight>p{
-	color:#333;
+	color:black;
 	font-size: 20px;
 	font-weight: Regular;
 	margin-top: 14px;
@@ -45,6 +45,8 @@
 	color:#999;
 	font-size: 12px;
 	font-style: inherit;
+	line-height: 20px;
+	color: #666666;
 }
 .mainContextLiftUl{
 	width: 100%;

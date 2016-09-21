@@ -1,5 +1,6 @@
 
 	<div ng-controller="index">
+
 		<div id="index_banner" >
 			<div class="index_lunbo1">
 				<lunbo></lunbo>
@@ -106,28 +107,13 @@
 						<a>上海赛默飞世尔仪器（上海）公司招聘实习生  </a>
 						<img src="../images/zhuan-jia_03.png"/>                        
 					</h2>
-					<ul>
-						<li><a href="javascript:;">佛山佛山市南海区信息网络中心2014招聘</a></li>
-						<li><a href="javascript:;">北京普天新能源有限责任公司招聘北京运维工程师</a> </li>
-						<li><a href="javascript:;">广州阿波罗（中国）有限公司2014招聘</a> </li>
-						<li><a href="javascript:;">北京建亿通（北京）数据处理信息有限公司2014招聘</a> </li>
-						<li><a href="javascript:;">北京人民日报社下属单位招聘应届生（商务合作）</a></li>
-						<li><a href="javascript:;">吉林韩国第一门户网站NAVER招聘Naver Service</a></li>
-						<li><a href="javascript:;">上海赛默飞世尔仪器（上海）公司招聘实习生</a></li>
-						<li><a href="javascript:;">北京掌上灵通招聘编辑</a></li>
-						<li><a href="javascript:;">全国 【英特尔全职招聘】Graphics Software</a></li>
+					<ul >
+						<li ng-repeat="t in data_jiuyexinxi" ng-click="did(t)"><a href="javascript:;">{{t.title | limitTo:'18' }}{{x.title.length>10?'...':''}}</a></li>
 					</ul>
-					<ul>
-						<li><a href="javascript:;">佛山佛山市南海区信息网络中心2014招聘</a></li>
-						<li><a href="javascript:;">北京普天新能源有限责任公司招聘北京运维工程师</a> </li>
-						<li><a href="javascript:;">广州阿波罗（中国）有限公司2014招聘</a> </li>
-						<li><a href="javascript:;">北京建亿通（北京）数据处理信息有限公司2014招聘</a> </li>
-						<li><a href="javascript:;">北京人民日报社下属单位招聘应届生（商务合作）</a></li>
-						<li><a href="javascript:;">吉林韩国第一门户网站NAVER招聘Naver Service</a></li>
-						<li><a href="javascript:;">上海赛默飞世尔仪器（上海）公司招聘实习生</a></li>
-						<li><a href="javascript:;">北京掌上灵通招聘编辑</a></li>
-						<li><a href="javascript:;">全国 【英特尔全职招聘】Graphics Software</a></li>
+					<ul >
+						<li ng-repeat="t in data_jiuyexinxi"><a href="javascript:;">{{t.title | limitTo:'18' }}{{x.title.length>10?'...':''}}</a></li>
 					</ul>
+					
 				</div>
 				<div class="index_xinwen_right">
 					<h2>
