@@ -3,39 +3,27 @@
 		
 	<div>
 		<sybTjBg>
-			<p class="place">您现在所在的位置：<a href="syb.html">创业平台 </a><img src="../images/arrows_c.png" /><span> 推荐项目</span></p>
+			<p class="place">您现在所在的位置：<a href="javascript:;" ui-sref="index.syb">创业平台 </a><img src="../images/arrows_c.png" /><span>推荐项目</span></p>
 			<section class="content1_c clear">
 				<!------------------内容左----------------->
 				<section class="leftBox1_c">
-					<h3 class="title_c">一个腾飞的机会</h3>
-					<div class="bannerBox1_c"><img src="../images/recommend2.png"/></div>
-					<div class="tjText_c">
-						<p>第一要确定一个愿景，这个方法很简单，让大家画一个圆圈，你就告诉大家，你是怎么画的圆，大家知道要用圆规，首先要圈一个点，这个点就是你自己的职业定位，从这一点深化出去。第二个量一个半径，这个半径就是你职业的能领域，这是第一步要有一个愿景。 <br /> <br />第二步非常重要的就是要找一个职业的路径，我们有一句话叫条条大道通罗马，任何一个职业的愿景要达到，肯定有很多条路，一般要找三条以上的路最后比较，发现哪条路投入最低，产出最快，机会成本最低，最后能够达到。<br /> <br />第三个部分叫执行力，执行的时候强调把一个大的目标分解成不同的小目标，一步一步的去做，时间关系，不能展开。 <br /> <br />第四个叫评估，你的职业目标和职业计划，职业愿景能不能完成这个职业方案规划出来以后，你得去评估他，三个月也好，一年也好，至少一年要做一次评。。。。。。</p>
+					<h2 class="title1_c">项目介绍：</h2>
+					<div class="bannerBox1_c">
+						<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{data5.img}}" />
 					</div>
-					
+					<div class="tjText_c">
+						<p ng-bind-html="data5.content"></p>
+					</div>
 				</section>
 				<!-----------------内容左结束--------------->
 				<!------------------内容右----------------->
 				<section class="rightBox1_c">
 					<p class="xmtjTitle_c">项目推荐</p>
+					<div>
 					<ul class="xmtjContent2_c">
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地</p>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地</p>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地</p>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地</p>
-						</li>
+						<sybtjclunbo></sybtjclunbo>
 					</ul>
+					</div>
 				</section>
 				<!-----------------内容右结束--------------->
 				
