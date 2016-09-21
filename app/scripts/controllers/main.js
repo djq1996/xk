@@ -60,7 +60,7 @@ angular.module('yuanjinweiApp')
 	})
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
-			$state.go('index.zczxS')
+			window.location.href='http://localhost:9000/#/index/zczxS'
 		}
 	})
 	.controller('lj', function($scope, $http, $state) {
@@ -72,59 +72,7 @@ angular.module('yuanjinweiApp')
 			$state.go('index.sybTj')
 		}
 	})
-	.controller('index', function($scope, $http, $state) {
-	$scope.indexlunbo1=[
-	{option: "翔坤集团_02.png"},
-	{option: "03.jpg"},
-	{option: "04.jpg"},
-	{option: "06.png"},
-	{option: "07.png"}]
-	})
-	.directive('lunbo',function($timeout){
-		return{
-			restrict: 'ECMA',
-		    replace: true,
-		    template:"<img ng-repeat='data in indexlunbo1' ng-src='../images/{{data.option}}'/>",
-		    link:function(scope, elem, attrs){
-		    	$timeout(function() {
-		    		var className_index = $("." + $(elem).parent()[0].className);
-					var i = 0,timer_index=null;
-					timer_index = setInterval(slide, 3000);
-					  function slide(){
-					  	i++;
-					  	if(i>=className_index.children("img").length){
-                        		i=0
-                        }
-                            className_index.children("img").eq(i).fadeIn().siblings().fadeOut()	
-                       };
-                       // 清除定时器
-						$(".index_lunbo1,.index_banner_left,.index_banner_right").hover(function() {
-							clearInterval(timer_index);
-						}, function() {
-							clearInterval(timer_index);
-							timer_index = setInterval(slide, 3000);
-						})
-						
-						//点击换图
-						$(".index_banner_left").click(function(){
-							if(i==0){
-								i=className_index.children("img").length;
-							}
-								i--;
-							className_index.children("img").eq(i).fadeIn().siblings().fadeOut()
-							
-						})
-						$(".index_banner_right").click(function(){
-							i++;
-							if(i==className_index.children("img").length){
-								i=0;
-							}
-							className_index.children("img").eq(i).fadeIn().siblings().fadeOut()
-						})
-		    	},0)
-		    }
-		}
-	})
+	
 
 
 	

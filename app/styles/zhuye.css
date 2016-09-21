@@ -383,18 +383,22 @@ overflow: hidden;
 	width: 282px;
 	font-size: 12px;
 	float: left;
+	
 }
 .index_xinwen_left ul li{
 	padding-bottom: 13px;
+	
 }
 .index_xinwen_left ul li a{
+	
+	display: block;
 	color: #000000;
 }
 .index_xinwen_left ul li a:hover{
 	color: #34a150;
 }
 .index_xinwen_left ul:last-child{
-	margin-left: 50px;
+	
 }
 .index_xinwen_right{
 	width: 375px;
