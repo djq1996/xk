@@ -2,8 +2,8 @@
 
 <div>
 	<!--banner-->
-	<div class="rccp" ng-controller="lunbo">
-		<div class="banner">
+	<div class="rccp">
+		<div class="banner" ng-controller="lunbo">
 			<div id="lunbo">
 				<lunborccp></lunborccp>
 			</div>
@@ -12,7 +12,7 @@
 				<p>人才测评和测评服务</p>
 				<div class="liji">
 					<img src="../images/uy_03.png" alt="" />
-					<span>立即测试</span>
+					<span>立即学习</span>
 				</div>
 			</div>
 		</div>
@@ -21,124 +21,44 @@
 			<ul class="lv1">
 				<li>
 					<a href="#" class="lv11">产&nbsp&nbsp品</a>
-					<ol class="lv2">
-						<li><a href="#">产品概述</a></li>
-						<li><a href="#">PAC学生测评</a></li>
-						<li><a href="#">Profile XT(PXT)</a></li>
-						<li><a href="#">CheckPoint 360</a></li>
-						<li><a href="#">Profiles绩效指标</a></li>
-						<li><a href="#">Profiles销售指标</a></li>
-						<li><a href="#">Profiles客户服务形象</a></li>
-						<li><a href="#">Profiles管理融合性</a></li>
-					</ol>
 				</li>
-
 				<li>
 					<a href="#" class="lv22">服&nbsp&nbsp务</a>
-					<ol class="lv2">
-						<li><a href="#">产品概述</a></li>
-						<li><a href="#">PAC学生测评</a></li>
-						<li><a href="#">Profile XT(PXT)</a></li>
-						<li><a href="#">CheckPoint 360</a></li>
-						<li><a href="#">Profiles绩效指标</a></li>
-						<li><a href="#">Profiles销售指标</a></li>
-						<li><a href="#">Profiles客户服务形象</a></li>
-						<li><a href="#">Profiles管理融合性</a></li>
-					</ol>
 				</li>
-
 				<li>
 					<a href="#" class="lv33">客&nbsp&nbsp户</a>
-					<ol class="lv2">
-						<li><a href="#">产品概述</a></li>
-						<li><a href="#">PAC学生测评</a></li>
-						<li><a href="#">Profile XT(PXT)</a></li>
-						<li><a href="#">CheckPoint 360</a></li>
-						<li><a href="#">Profiles绩效指标</a></li>
-						<li><a href="#">Profiles销售指标</a></li>
-						<li><a href="#">Profiles客户服务形象</a></li>
-						<li><a href="#">Profiles管理融合性</a></li>
-					</ol>
-				</li>
-
 				<li>
 					<a href="#" class="lv44">专业机构</a>
-					<ol class="lv2">
-						<li><a href="#">产品概述</a></li>
-						<li><a href="#">PAC学生测评</a></li>
-						<li><a href="#">Profile XT(PXT)</a></li>
-						<li><a href="#">CheckPoint 360</a></li>
-						<li><a href="#">Profiles绩效指标</a></li>
-						<li><a href="#">Profiles销售指标</a></li>
-						<li><a href="#">Profiles客户服务形象</a></li>
-						<li><a href="#">Profiles管理融合性</a></li>
-					</ol>
 				</li>
-
 			</ul>
 		</div>
 		<!--在线测评-->
 		<div class="zai">
 			<div class="zaixian">
-				<div class="zaix">
+				<div class="zaix"  ng-controller="rccp">
 					<div class="left">
 						<p class="xin">
 							<span>新闻中心</span>
-							<span><a href="#">MORE+</a></span>
 						</p>
 						<div class="bottom">
 							<div class="b_left">
-								<p>田纪云谈中共元老退休：修身养性别干预“朝政”</p>
-								<p>揭秘中国海外追逃行动：由1张猫照片确定嫌犯位置</p>
-								<p>海军最高规格纪念甲午战争钱0周年 舰艇齐声鸣笛</p>
-								<p>王立军在重庆平均1.7天申请一项专利 含火锅器具</p>
-								<p>云锡原董事长落马 遭昔日“哥们儿”争相检举揭发</p>
-								<p>外媒：中国严格取缔双重国籍 彻查未注销户口</p>
-								<p>水晶换挡杆！沃尔沃史上最豪华SUV新大众CC升级</p>
-								<p>曝湖南攸县建豪华官员公寓 装修按五星级标准(图)</p>
-								<p>上海自贸区卖豪车:比4S店便宜30万 王思聪是好</p>
-								<p>一日曝4名央企高管被查 一汽大众被查高管已离职</p>
-								<p>京东一年打印发票要花2亿 传万达与百度腾讯成立</p>
-								<p>房产黄金时代结束 购房者不易获房贷优惠 观望渐淡</p>
-								<p>王健林投资房产1分钟赚7万 中外巨富二代:王思聪</p>
+								<h3 ng-bind-html='data[2].title'></h3>
+								<p ng-bind-html="data[2].content | limitTo:'350'"></p>
 							</div>
 							<div class="b_left">
-								<p>田纪云谈中共元老退休：修身养性别干预“朝政”</p>
-								<p>揭秘中国海外追逃行动：由1张猫照片确定嫌犯位置</p>
-								<p>海军最高规格纪念甲午战争钱0周年 舰艇齐声鸣笛</p>
-								<p>王立军在重庆平均1.7天申请一项专利 含火锅器具</p>
-								<p>云锡原董事长落马 遭昔日“哥们儿”争相检举揭发</p>
-								<p>外媒：中国严格取缔双重国籍 彻查未注销户口</p>
-								<p>水晶换挡杆！沃尔沃史上最豪华SUV新大众CC升级</p>
-								<p>曝湖南攸县建豪华官员公寓 装修按五星级标准(图)</p>
-								<p>上海自贸区卖豪车:比4S店便宜30万 王思聪是好</p>
-								<p>一日曝4名央企高管被查 一汽大众被查高管已离职</p>
-								<p>京东一年打印发票要花2亿 传万达与百度腾讯成立</p>
-								<p>房产黄金时代结束 购房者不易获房贷优惠 观望渐淡</p>
-								<p>王健林投资房产1分钟赚7万 中外巨富二代:王思聪</p>
+								<h3 ng-bind-html='data[3].title'></h3>
+								<p ng-bind-html="data[3].content | limitTo:'360'"></p>
 							</div>
 						</div>
 					</div>
 					<div class="right">
 						<p class="xin">
 							<span>市场活动</span>
-							<span><a href="#">MORE+</a></span>
 						</p>
 						<div class="bottom">
 							<div class="b_left">
-								<p>田纪云谈中共元老退休：修身养性别干预“朝政”</p>
-								<p>揭秘中国海外追逃行动：由1张猫照片确定嫌犯位置</p>
-								<p>海军最高规格纪念甲午战争钱0周年 舰艇齐声鸣笛</p>
-								<p>王立军在重庆平均1.7天申请一项专利 含火锅器具</p>
-								<p>云锡原董事长落马 遭昔日“哥们儿”争相检举揭发</p>
-								<p>外媒：中国严格取缔双重国籍 彻查未注销户口</p>
-								<p>水晶换挡杆！沃尔沃史上最豪华SUV新大众CC升级</p>
-								<p>曝湖南攸县建豪华官员公寓 装修按五星级标准(图)</p>
-								<p>上海自贸区卖豪车:比4S店便宜30万 王思聪是好</p>
-								<p>一日曝4名央企高管被查 一汽大众被查高管已离职</p>
-								<p>京东一年打印发票要花2亿 传万达与百度腾讯成立</p>
-								<p>房产黄金时代结束 购房者不易获房贷优惠 观望渐淡</p>
-								<p>王健林投资房产1分钟赚7万 中外巨富二代:王思聪</p>
+								<h3 ng-bind-html='data[4].title'></h3>
+								<p ng-bind-html="data[4].content | limitTo:'350'"></p>
 							</div>
 						</div>
 					</div>
