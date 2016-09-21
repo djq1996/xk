@@ -20,8 +20,8 @@ app.controller('index', function($scope, $http, $state) {
             })
             
             
-            $scope.did = function(x){
-            	window.location.href='http://localhost:9000/#/index/zczxS'
+            $scope.did = function(id){
+            	$state.go('.zczxS',{id:id})
             }
 	})
 		

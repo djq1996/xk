@@ -482,7 +482,31 @@ overflow: hidden;
 	padding-top: 15px;
 	float: right;
 }
-.index_xianshi{
+.index_interact_img_left{
+	position: absolute;
+	top: 208px;
+	left: 0;
+}
+.index_interact_img_right{
+	position: absolute;
+	top: 208px;
+	right: 0;
+}
+.index_interact_img_center{
+	overflow: hidden;
+	width: 840px;
+	margin: 0 auto;
+}
+
+.index_interact_img_center img{
+	width: 120px;
+	height: 140px;
+	margin:20px 15px;
+	float: left;
+}.
+
+
+/*.index_xianshi{
 	width: 840px;
 	height: 208px;
 	padding-top: 30px;
@@ -516,4 +540,4 @@ overflow: hidden;
 .index_interact_img_center{
 	position: absolute;
 	left: 423px;
-}
+}*/

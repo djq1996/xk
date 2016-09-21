@@ -85,6 +85,32 @@ angular.module('yuanjinweiApp')
 				$scope.cc='';
 			}
 		}
+		//推荐
+			 	$http({
+				    url:'http://123.56.227.177:2503/xiang-info',
+				    method:"GET",
+				    params:{"$skip":0,"$limit":2,"toindex":1}
+				}).success(function(e){
+					$scope.data=e;
+				})
+				//政策信息
+				$http({
+				    url:'http://123.56.227.177:2503/xiang-info',
+				    method:"GET",
+				    params:{"$skip":3,"$limit":5,"classify":0}
+				}).success(function(e){
+					$scope.data2=e;
+				})
+				
+				//就业指南
+				$http({
+				    url:'http://123.56.227.177:2503/xiang-info',
+				    method:"GET",
+				    params:{"$skip":0,"$limit":8,"classify":1}
+				}).success(function(e){
+					$scope.data3=e;
+				})
+
 	})
 	.controller('lj', function($scope, $http, $state) {
 		$scope.ImgClick = function() {
@@ -97,12 +123,7 @@ angular.module('yuanjinweiApp')
 	})
 
 	.controller('index', function($scope, $http, $state) {
-	$scope.indexlunbo1=[
-	{option: "翔坤集团_02.png"},
-	{option: "03.jpg"},
-	{option: "04.jpg"},
-	{option: "06.png"},
-	{option: "07.png"}]
+
 	$scope.indexlunbo2=[
 	{option: "翔坤集团_40.png"},
 	{option: "翔坤集团_42.png"},
@@ -119,7 +140,7 @@ angular.module('yuanjinweiApp')
 		return{
 			restrict: 'ECMA',
 		    replace: true,
-		    template:"<img ng-repeat='data in indexlunbo1' ng-src='../images/{{data.option}}'/>",
+		    template:"<img ng-repeat='x in data' ng-src='http://123.56.227.177/bi/public/xiang_upload/images/{{x.img}}' />",
 		    link:function(scope, elem, attrs){
 		    	$timeout(function() {
 		    		var className_index = $("." + $(elem).parent()[0].className);
@@ -160,62 +181,7 @@ angular.module('yuanjinweiApp')
 		    }
 		}
 	})
-	.directive('lunboxx',function($timeout){
-		return{
-			restrict: 'ECMA',
-		    replace: true,
-		    template:"<li ng-repeat='data in indexlunbo2'><a href='javascript:;'><img ng-src='../images/{{data.option}}'/></a></li>",
-		    link:function(scope, elem, attrs){
-		    	$timeout(function(){
-		    		
-function getClass(className) { //className      
-	if(document.getElementsByClassName) {
-		return document.getElementsByClassName(className);
-	} else {
-		var All = document.getElementsByTagName('*')
-		var arr = [];
-		for(var i = 0; i < All.length; i++) {
-			if(All[i].className == className) {
-				arr.push(All[i])
-			}
-		}
-		return arr;
-	}
-}
-function first(obj) { //第一个节点的
-	if(obj.firstElementChild) {
-		return obj.firstElementChild
-	} else {
-		return obj.firstChild
-	}
 
-}		    	
-          var tim_fanda=null
-		  var className_index_fanda = getClass("lubno_fangda")[0];
-		  var className_index_fanda_css=className_index_fanda.currentStyle||window.getComputedStyle(className_index_fanda,false)
-		    			function hengxiang(){
-			    				className_index_fanda.style.left=parseInt(className_index_fanda_css.left)-1+'px';
-			    				if(parseInt(className_index_fanda_css.left)<=-180){
-			    					className_index_fanda.style.left="0px";
-			    					className_index_fanda.appendChild(first(className_index_fanda));
-			    				}
-		    				}
-		    			tim_fanda=setInterval(hengxiang,30)
-		    		 //----------hover停止调用函数，离开再次调用----------
-                      className_index_fanda.onmouseover=function(){
-	                       clearInterval(tim_fanda)
-                            }
-                      className_index_fanda.onmouseout=function(){
-	                       tim_fanda=setInterval(hengxiang,30)  
-	                      }  
-		    	},0)
-		    }
-		}
-	})
-
-
-
-	
 	.controller('lunbo', function($scope, $http, $state) {
 	 $scope.indexlunbo1=[
 	{option: "tu_04.png"},
@@ -301,5 +267,50 @@ function first(obj) { //第一个节点的
 		    	},0)
 		    }
 		}
+	}).controller('detail',function($scope,$http,$stateParams){
+			
+		    $http({
+                url:"http://123.56.227.177:2503/xiang-info",
+               	params:{id:$stateParams.id},
+                method:"GET"
+            }).success(function(e){
+            	debugger
+            	//alert($stateParams.id)
+                $scope.data=e
+            })
+	}).directive('lunboxx',function(){
+		return {
+			template:'<div class="index_interact_img"><img src="../images/翔坤集团_52.png" class="index_interact_img_left"/><ul class="index_interact_img_center"><img src="../images/翔坤集团_40.png"/><img src="../images/翔坤集团_42.png"/><img src="../images/翔坤集团_44.png"/><img src="../images/翔坤集团_46.png"/><img src="../images/翔坤集团_49.png"/></ul><img src="../images/翔坤集团_55.png" class="index_interact_img_right"/></div>',
+			scope:{},
+			link:function(s,a,e){
+				var tim=null;
+			function a(){
+				$('.index_interact_img_center').append('<img src="'+$('.index_interact_img_center img:eq(0)').attr('src')+'">')
+				$('.index_interact_img_center img:eq(2)').animate({width:'120px',height:'140px',margin:'20px 15px'},800)
+				$('.index_interact_img_center img:eq(3)').animate({width:'180px',height:'210px',margin:'0px 15px'},800)
+				$('.index_interact_img_center img:eq(0)').remove()
+							
+			}
+			function b(){
+				$('.index_interact_img_center').prepend('<img src="'+$('.index_interact_img_center img:eq(4)').attr('src')+'">')
+				$('.index_interact_img_center img:eq(5)').remove()
+				$('.index_interact_img_center img:eq(3)').animate({width:'120px',height:'140px',margin:'20px 15px'},800)
+				$('.index_interact_img_center img:eq(2)').animate({width:'180px',height:'210px',margin:'0px 15px'},800)
+			}
+			a()
+			tim=setInterval(a,2000)
+			$('.index_interact_img_left').click(function(){
+					b()
+					clearInterval(tim);
+					tim=setInterval(b,2000)
+			})	
+			$('.index_interact_img_right').click(function(){
+					a()
+					clearInterval(tim);
+					tim=setInterval(a,2000)
+			})
+			}
+		}
 	})
+
 	

@@ -25,28 +25,36 @@
 	float: left;
 	margin-top: 10px;
 }
+.mainContextLiftTop>h2{
+	float: left;
+	width: 300px;
+	height:30px;
+	margin-top: 10px;
+	margin-left: 19px;
+	color:#34a150;
+}
 .mainContextLiftTopRight{
 	float: left;
 	width: 330px;
-	margin: 17px 0 0 19px;
+	margin: 0px 0 0 19px;
 }
 .mainContextLiftTopRight>h2{
 	color:#34a150;
 	font-size: 16px;
 }
 .mainContextLiftTopRight>p{
-	color:black;
+	color:#333;
 	font-size: 20px;
 	font-weight: Regular;
 	margin-top: 14px;
 	margin-bottom: 4px;
 }
 .mainContextLiftTopRight>i{
+	line-height: 24px;
 	color:#999;
+	text-indent: 2em;
 	font-size: 12px;
 	font-style: inherit;
-	line-height: 20px;
-	color: #666666;
 }
 .mainContextLiftUl{
 	width: 100%;

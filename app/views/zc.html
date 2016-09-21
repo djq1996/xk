@@ -6,12 +6,10 @@
 			<div class='zc-mainContextLift'>
 				<div class='mainContextLiftTop'>
 					<img src="../images/0_03.jpg" alt="" />
-					<div class='mainContextLiftTopRight'>
-						<h2>推荐</h2>
-						<p>北京地区2014上半年高校毕业生系</p>
-						<i>毕业了，工作了，爹妈不管了，生活要靠自己了。这才发现，”生活成本有那么高，压力太大我受不了；老板要求有那么多，怎么努力都做不到；城市太吵而薪水太少</i>
-						<p>北京地区2014上半年高校毕业生系</p>
-						<i>毕业了，工作了，爹妈不管了，生活要靠自己了。这才发现，”生活成本有那么高，压力太大我受不了；老板要求有那么多，怎么努力都做不到；城市太吵而薪水太少</i>
+					<h2>推荐</h2>
+					<div class='mainContextLiftTopRight' ng-repeat='i in data'>
+						<p  ui-sref="index.zczxS({id:i.id})">{{i.title}}</p>
+						<i ng-bind-html="i.content"></i>
 					</div>
 				</div>
 				<ul class='mainContextLiftUl'>
@@ -25,8 +23,8 @@
 				<div ng-switch='nba'>
 					<!--政策信息-->
 					<div class='mainautoConter' ng-switch-default> 
-						<div class='zc-mainauto'>
-							<h1 class='zc-mainautoH'>ssss</h1>
+						<div class='zc-mainauto' ng-repeat='i in data2'>
+							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})">{{i.title}}</h1>
 							<hr />
 							<div class='timeUl'>
 								<span>2014-08-08　16:04</span>
@@ -34,16 +32,16 @@
 								<span>评论：2</span>
 							</div>
 							<div class='zc-center'>
-								<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-								<img src="../images/2_03.jpg" alt="" />
+								<p ng-bind-html="i.content | limitTo:'150'"></p>
+								<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{i.img}}" />
 							</div>
 						</div>
 						<div class='zc-ghy'>更多行业资讯</div>
 					</div>
 					<!--就业指南-->
 					<div class='mainautoConter' ng-switch-when="zhiNan">
-						<div class='zc-mainauto'>
-							<h1 class='zc-mainautoH'>教育部：教育部日前发文要求做好离校未就业高校毕</h1>
+						<div class='zc-mainauto' ng-repeat='i in data3'>
+							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})">{{i.title}}</h1>
 							<hr />
 							<div class='timeUl'>
 								<span>2014-08-08　16:04</span>
@@ -51,8 +49,8 @@
 								<span>评论：2</span>
 							</div>
 							<div class='zc-center'>
-								<p>中新网7月29日电 据教育部网站消息，教育部日前发文要求做好离校未就业高校毕业生就业创业工作，《通知》要求，各地高校积配合人社部门组织实施好“离校未就业生就业促进计划”，力争使每一名有就业意愿的未就业毕业生在毕业半年内实现就业或参加到就业准备活动中。</p>
-								<img src="../images/6_06.jpg" alt="" />
+								<p ng-bind-html="i.content | limitTo:'150'"></p>
+								<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{i.img}}" />
 							</div>
 						</div>
 						<div class='zc-ghy'>更多行业资讯</div>

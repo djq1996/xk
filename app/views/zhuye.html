@@ -108,10 +108,10 @@
 						<img src="../images/zhuan-jia_03.png"/>                        
 					</h2>
 					<ul >
-						<li ng-repeat="t in data_jiuyexinxi" ng-click="did(t)"><a href="javascript:;">{{t.title | limitTo:'18' }}{{x.title.length>10?'...':''}}</a></li>
+						<li ng-repeat="t in data_jiuyexinxi" ui-sref="index.zczxS({id:t.id})"><a href="javascript:;">{{t.title | limitTo:'18' }}{{t.title.length>10?'...':''}}</a></li>
 					</ul>
 					<ul >
-						<li ng-repeat="t in data_jiuyexinxi"><a href="javascript:;">{{t.title | limitTo:'18' }}{{x.title.length>10?'...':''}}</a></li>
+						<li ng-repeat="t in data_jiuyexinxi"  ui-sref="index.zczxS({id:t.id})"><a href="javascript:;">{{t.title | limitTo:'18' }}{{t.title.length>10?'...':''}}</a></li>
 					</ul>
 					
 				</div>
@@ -142,15 +142,7 @@
 					<span>国家政策</span>
 					<img src="../images/zhuan-jia_03.png"/> 
 				</h2>	
-				<div class="index_interact_img">
-					<div class="index_xianshi">
-						<ul class="lubno_fangda">
-							<lunboxx></lunboxx>
-						</ul>
-					</div>	
-					<!--<img src="../images/翔坤集团_52.png" class="index_interact_img_left"/>
-					<img src="../images/翔坤集团_55.png" class="index_interact_img_right"/>-->
-				</div>
+				<lunboxx></lunboxx>
 			</div>	
 		</div>
 	</div>
