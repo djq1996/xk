@@ -58,12 +58,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		templateUrl: 'views/syb.html',
 		controller: 'syb_c'
 	}).state('index.sybZx', {
-		url: '/sybZx',
+		url: '/sybZx?id&gushi',
 		templateUrl: 'views/sybZx.html',
-		controller: 'lj1'
+		controller: 'sybZx_c'
 	}).state('index.sybTj', {
-		url: '/sybTj',
-		templateUrl: 'views/sybTj.html'
+		url: '/sybTj?id',
+		templateUrl: 'views/sybTj.html',
+		controller: 'sybTj_c'
 	})
 	$urlRouterProvider.when('', '/index/zhuye');
 
