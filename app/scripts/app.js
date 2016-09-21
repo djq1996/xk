@@ -17,6 +17,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	}).state('index.zhuye', {
 		url: '/zhuye',
 		templateUrl: 'views/zhuye.html',
+		controller:'index'
 	}).state('login', {
 		url: '/login',
 		templateUrl: 'views/login.html',

@@ -63,8 +63,11 @@ angular.module('yuanjinweiApp')
 	})
 	.controller('zc', function($scope, $http, $state) {
 		$scope.zc = function() {
-			console.log(1)
+
 			$state.go('index.zczxS')
+
+			//window.location.href='http://localhost:9000/#/index/zczxS'
+
 		}
 		$scope.leftZc = function(e,k) {
 			$scope.cba=e;
@@ -86,6 +89,7 @@ angular.module('yuanjinweiApp')
 			$state.go('index.sybTj')
 		}
 	})
+
 	.controller('index', function($scope, $http, $state) {
 	$scope.indexlunbo1=[
 	{option: "翔坤集团_02.png"},
@@ -202,6 +206,7 @@ function first(obj) { //第一个节点的
 		    }
 		}
 	})
+
 
 
 	
