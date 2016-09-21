@@ -253,7 +253,8 @@ h2{
 	display: block;
 	width: 319px;
 	height: auto;
-	float: left;
+    position: relative;
+    top: 0;
 }
 .xmtjContent2_c li{
 	display: block;
@@ -366,11 +367,18 @@ sybTjBg{
 	margin-right: 22px;
 	padding-top: 10px;
 }
-.title_c{
+.rightBox1_c div{
+	width: 319px;
+	height: 775px;
+	position: relative;
+	overflow: hidden;
+}
+.title1_c{
 	display: block;
 	width: 636px;
 	height: 53px;
 	line-height: 53px;
+	font-size: 24px;
 	color: #333333;
 	float: left;
 }
@@ -390,7 +398,7 @@ sybTjBg{
 	padding: 22px;
 }
 .tjText_c p{
-	line-height: 20px;
+	line-height: 26px;
 	font-size: 14px;
 	color: #666666;
 }

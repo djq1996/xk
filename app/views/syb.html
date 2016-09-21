@@ -1,7 +1,7 @@
 
 		
 
-	<div ng-controller="lj">
+	<div>
 		<bg>
 			<section class="content_c clear">
 				<!------------------内容左----------------->
@@ -9,90 +9,41 @@
 					<banner>
 						<div class="bannerBox_c">
 							<lunbosybc></lunbosybc>
-							<!--<img ng-click='ImgClick()' src="../images/banner1_c.png" />
-							<img src="../images/banner1_c.png" />
-							<img src="../images/banner1_c.png" />
-							<img src="../images/banner1_c.png" />-->
 						</div>
 					</banner>
 					<div class="tabControl_c">
-						<a href="javascript:;" class="tabControlLeft_c" ng-class='tabnav_left' ng-click="clickleft()">创业资讯</a>
+						<a href="javascript:;" class="tabControlLeft_c" ng-class='tabnav_left' ng-click="clickleft()" >创业资讯</a>
 						<a href="javascript:;" class="tabControlRight_c" ng-class='tabnav_right' ng-click="clickright()">创业故事</a>
 					</div>
 					<ul class="informationBox_c" ng-show='conter_left'>
-						<li>
-							<img src="../images/information1_c.png" />
-							<h3 class="text_title_c">中国互联网出来：小步试错到大步投</h3>
-							<p class="text_c">俺是个大神哈时，你，按时大世界科技客服哈发贺卡的恢复速度快卡上始啊数据量大数据量大</p>
+						<li ng-repeat="x in data1">
+							<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{x.img}}" ng-click="xq_c(x)"/>
+							<h3 class="text_title_c" ng-click="xq_c(x)">{{x.title| limitTo:'15'}}{{x.title.length>15?'...':''}}</h3>
+							<p class="text_c" ng-bind-html="x.content | limitTo:'60'"></p>
 						</li>
 					</ul>
 					<ul class="informationBox1_c" ng-show='conter_right'>
-						<li>
-							<img src="../images/information1_c.png" />
-							<h3 class="text_title_c">小步试错到大步投资，按实际噶就是噶设</h3>
-							<p class="text_c">按时打算阿贾开始的话费卡就是卡还款加卡说说大家看阿卡价格和考试肯定抗日奥数我爱谁花和……</p>
+						<li ng-repeat="x in data2">
+							<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{x.img}}" ng-click="xq1_c(x)"/>
+							<h3 class="text_title_c" ng-click="xq1_c(x)">{{x.title| limitTo:'15'}}{{x.title.length>15?'...':''}}</h3>
+							<p class="text_c" ng-bind-html="x.content | limitTo:'60'"></p>
 						</li>
 					</ul>
 				</section>
 				<!-----------------内容左结束--------------->
 				<!------------------内容右----------------->
 				<section class="rightBox_c">
-					<div class="news1_c">
-						<h2>李克强调研工商部门</h2>
-						<p>7月25日，李克强总理到济南市工商局考察。大众啊</p>
+					<div class="news1_c" ng-repeat="t in data">
+						<h2 ng-click="xq_c(t)">{{t.title | limitTo:'12' }}{{t.title.length>12?'...':''}}</h2>
+						<p ng-bind-html="t.content | limitTo:'40'"></p>
 					</div>
-					<div class="news1_c">
-						<h2>李克强调研工商部门</h2>
-						<p>7月25日，李克强总理到济南市工商局考察。大众啊</p>
-					</div>
-					<div class="news1_c">
-						<h2>李克强调研工商部门</h2>
-						<p>7月25日，李克强总理到济南市工商局考察。大众啊</p>
-					</div>
+					
 					<p class="xmtjTitle_c">项目推荐</p>
 					<div class="xmtjContentBox_c">
 					<ul class="xmtjContent_c" >
 						<lunbosybc1></lunbosybc1>
-						<!--<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
-							<a ng-click='xqxwLj()'>[详情]</a>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
-							<a ng-click='xqxwLj()'>[详情]</a>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
-							<a ng-click='xqxwLj()'>[详情]</a>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
-							<a ng-click='xqxwLj()'>[详情]</a>
-						</li>
-						<li>
-							<img src="../images/recommend1.png" />
-							<p class="xmtjText1_c">寻找999位背包客，共建大理客栈梦想孵化基地爱上</p>
-							<a ng-click='xqxwLj()'>[详情]</a>
-						</li>-->
 					</ul>
 					</div>
-					<p class="rmjyTitle_c">热门就业信息</p>
-					<section class="rmjyContent_c">
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-						<p><a href="#z">北京蓝冰时代营销策划有限公司</a></p>
-					</section>
 					<section class="qrCode_c">
 						<img src="../images/qrcode_c.png" />
 					</section>
