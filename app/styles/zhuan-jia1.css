@@ -170,9 +170,22 @@ select {
 .zj-left-ul1 li:hover {
   color: #0290DA;
 }
+.zj-left-ul1 li h4 {
+  height: 20px;
+  line-height: 20px;
+  font-weight:bold;
+}
+.zj-left-ul1 li img{
+	width:121px;
+	height:141px;
+}
 .zj-left-ul1 li p {
   height: 20px;
   line-height: 20px;
+}
+.zj-left-ul1 li a{
+	color:#000;
+	text-decoration: none;
 }
 .zj-left-ul2 {
   width: 1020px;
