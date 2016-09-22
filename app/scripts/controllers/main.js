@@ -76,13 +76,7 @@ angular.module('yuanjinweiApp')
 		})
 	})
 	.controller('zc', function($scope, $http, $state) {
-		$scope.zc = function() {
-
-			$state.go('index.zczxS')
-
-			//window.location.href='http://localhost:9000/#/index/zczxS'
-
-		}
+		
 		$scope.leftZc = function(e,k) {
 			$scope.cba=e;
 			if(k==0){
@@ -108,8 +102,49 @@ angular.module('yuanjinweiApp')
 				    params:{"$skip":3,"$limit":5,"classify":0}
 				}).success(function(e){
 					$scope.data2=e;
+					
+			         
 				})
-				
+				$scope.dd=function(x,t){
+			         	$scope.x=parseInt(x)+1;
+			         	$scope.t=t;
+			         	
+			         	
+			         	
+			         $http({
+				    url:'http://123.56.227.177:2503/xiang-info',
+				    params:{id:$scope.t},
+				    method:"post",
+				    data:{'readnum':$scope.x}
+				}).success(function(e){
+					
+					
+			         
+				})			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         	
+			         }
 				//就业指南
 				$http({
 				    url:'http://123.56.227.177:2503/xiang-info',
@@ -118,6 +153,7 @@ angular.module('yuanjinweiApp')
 				}).success(function(e){
 					$scope.data3=e;
 				})
+				
 
 	})
 	.controller('lj', function($scope, $http, $state) {
@@ -275,6 +311,8 @@ angular.module('yuanjinweiApp')
             	//debugger
             	//alert($stateParams.id)
                 $scope.data=e
+               
+                
             })
 	}).directive('lunboxx',function(){
 		return {

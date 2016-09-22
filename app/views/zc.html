@@ -24,12 +24,11 @@
 					<!--政策信息-->
 					<div class='mainautoConter' ng-switch-default> 
 						<div class='zc-mainauto' ng-repeat='i in data2'>
-							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})">{{i.title}}</h1>
+							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})" ng-click="dd(i.readnum,i.id)">{{i.title}}</h1>
 							<hr />
 							<div class='timeUl'>
-								<span>2014-08-08　16:04</span>
-								<span>阅读数：2248</span>
-								<span>评论：2</span>
+								<span>{{i.date | limitTo :'10'}}</span>
+								<span>阅读量：{{i.readnum}}</span>
 							</div>
 							<div class='zc-center'>
 								<p ng-bind-html="i.content | limitTo:'150'  | jieweijiadian:148"></p>
@@ -41,12 +40,11 @@
 					<!--就业指南-->
 					<div class='mainautoConter' ng-switch-when="zhiNan">
 						<div class='zc-mainauto' ng-repeat='i in data3'>
-							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})">{{i.title}}</h1>
+							<h1 class='zc-mainautoH'  ui-sref="index.zczxS({id:i.id})"  ng-click="dd(i.readnum,i.id)">{{i.title}}</h1>
 							<hr />
 							<div class='timeUl'>
-								<span>2014-08-08　16:04</span>
-								<span>阅读数：2248</span>
-								<span>评论：2</span>
+								<span>{{i.date | limitTo :'10'}}</span>
+								<span>阅读数：{{i.readnum}}</span>
 							</div>
 							<div class='zc-center'>
 								<p ng-bind-html="i.content | limitTo:'150'  | jieweijiadian:148"></p>
