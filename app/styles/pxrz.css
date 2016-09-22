@@ -245,7 +245,7 @@ select {
 }
 #rm .btnpeixun {
 	position:absolute;
-	top:138px;
+	top:130px;
 	width: 30px;
 	height: 60px;
 	line-height: 60px;
@@ -279,9 +279,6 @@ select {
 #tj-tp h3 a {
   color: #34a150;
   padding-bottom: 10px;
-}
-#tj-tp h3 a:hover {
-  border-bottom: 2px solid #34a150;
 }
 #tj-btm {
   width: 989px;
@@ -546,9 +543,6 @@ select {
   color: #34a150;
   padding-bottom: 10px;
 }
-#qy-lf-o-tp h3 a:hover {
-  border-bottom: 2px solid #34a150;
-}
 #qy-lf-o-btm-1 {
   width: 223px;
   height: 193px;
@@ -738,9 +732,6 @@ select {
 #xs-lf-o-tp h3 a {
   color: #34a150;
   padding-bottom: 10px;
-}
-#xs-lf-o-tp h3 a:hover {
-  border-bottom: 2px solid #34a150;
 }
 #xs-lf-o-btm-1 {
   width: 223px;
@@ -932,9 +923,6 @@ select {
   color: #34a150;
   padding-bottom: 10px;
 }
-#rz-lf-o-tp h3 a:hover {
-  border-bottom: 2px solid #34a150;
-}
 #rz-lf-o-btm-1 {
   width: 223px;
   height: 193px;
@@ -1124,9 +1112,6 @@ select {
 #js-lf-o-tp h3 a {
   color: #34a150;
   padding-bottom: 10px;
-}
-#js-lf-o-tp h3 a:hover {
-  border-bottom: 2px solid #34a150;
 }
 #js-lf-o-btm-1 {
   width: 130px;

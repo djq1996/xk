@@ -182,7 +182,7 @@ angular.module('yuanjinweiApp')
                 url:"http://123.56.227.177:2503/xiang-auto",
                 method:"GET"
             }).success(function(e){
-            	debugger
+            	//debugger
             	//alert($stateParams.id)
                 $scope.data=e
             })
@@ -338,7 +338,7 @@ angular.module('yuanjinweiApp')
                 url:server+"/xiang-info/",
                 params:{"$skip":0,"$limit":9}
            }).success(function(e){
-           	debugger
+           	//	debugger
             	console.log(e)
                 $scope.data_jiuyexinxi=e
             }).error(function(){
