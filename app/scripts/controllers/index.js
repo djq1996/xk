@@ -11,7 +11,8 @@ app.controller('index', function($scope, $http, $state) {
             })
     $http({
 				method:"GET",
-                url:server+"/xiang-info/"
+                url:server+"/xiang-info/",
+                param:{"$skip":0,"$limit":5}
            }).success(function(e){
             	console.log(e)
                 $scope.data_jiuyexinxi=e

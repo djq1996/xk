@@ -9,7 +9,7 @@
 					<h2>推荐</h2>
 					<div class='mainContextLiftTopRight' ng-repeat='i in data'>
 						<p  ui-sref="index.zczxS({id:i.id})">{{i.title}}</p>
-						<i ng-bind-html="i.content"></i>
+						<i ng-bind-html="i.content  | jieweijiadian:70"></i>
 					</div>
 				</div>
 				<ul class='mainContextLiftUl'>
@@ -32,7 +32,7 @@
 								<span>评论：2</span>
 							</div>
 							<div class='zc-center'>
-								<p ng-bind-html="i.content | limitTo:'150'"></p>
+								<p ng-bind-html="i.content | limitTo:'150'  | jieweijiadian:148"></p>
 								<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{i.img}}" />
 							</div>
 						</div>
@@ -49,7 +49,7 @@
 								<span>评论：2</span>
 							</div>
 							<div class='zc-center'>
-								<p ng-bind-html="i.content | limitTo:'150'"></p>
+								<p ng-bind-html="i.content | limitTo:'150'  | jieweijiadian:148"></p>
 								<img ng-src="http://123.56.227.177/bi/public/xiang_upload/images/{{i.img}}" />
 							</div>
 						</div>
