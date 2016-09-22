@@ -1,32 +1,4 @@
-app.controller('index', function($scope, $http, $state) {
-		 var server="http://123.56.227.177:2503";
-	$http({
-				method:"GET",
-                url:server+"/xiang-auto/"
-           }).success(function(e){
-            	console.log(e)
-                $scope.data=e
-            }).error(function(){
-            	
-            })
-    $http({
-				method:"GET",
-                url:server+"/xiang-info/",
-                param:{"$skip":0,"$limit":5}
-           }).success(function(e){
-            	console.log(e)
-                $scope.data_jiuyexinxi=e
-            }).error(function(){
-            	
-            })
-            
-            
-            $scope.did = function(id){
-            	$state.go('.zczxS',{id:id})
-            }
-	})
-		
-	.directive('lunbo',function($timeout){
+app.directive('lunbo',function($timeout){
 		return{
 			restrict: 'ECMA',
 		    replace: true,

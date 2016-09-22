@@ -130,20 +130,6 @@ angular.module('yuanjinweiApp')
 		}
 	})
 
-	.controller('index', function($scope, $http, $state) {
-
-	$scope.indexlunbo2=[
-	{option: "翔坤集团_40.png"},
-	{option: "翔坤集团_42.png"},
-	{option: "翔坤集团_44.png"},
-	{option: "翔坤集团_46.png"},
-	{option: "翔坤集团_49.png"},
-	{option: "翔坤集团_40.png"},
-	{option: "翔坤集团_42.png"},
-	{option: "翔坤集团_44.png"},
-	{option: "翔坤集团_46.png"},
-	{option: "翔坤集团_49.png"}]
-	})
 	.directive('lunbo',function($timeout){
 		return{
 			restrict: 'ECMA',
@@ -298,16 +284,16 @@ angular.module('yuanjinweiApp')
 				var tim=null;
 			function a(){
 				$('.index_interact_img_center').append('<img src="'+$('.index_interact_img_center img:eq(0)').attr('src')+'">')
-				$('.index_interact_img_center img:eq(2)').animate({width:'120px',height:'140px',margin:'20px 15px'},800)
-				$('.index_interact_img_center img:eq(3)').animate({width:'180px',height:'210px',margin:'0px 15px'},800)
+				$('.index_interact_img_center img:eq(2)').stop().animate({width:'120px',height:'140px',margin:'20px 15px'},800)
+				$('.index_interact_img_center img:eq(3)').stop().animate({width:'180px',height:'210px',margin:'0px 15px'},800)
 				$('.index_interact_img_center img:eq(0)').remove()
 							
 			}
 			function b(){
 				$('.index_interact_img_center').prepend('<img src="'+$('.index_interact_img_center img:eq(4)').attr('src')+'">')
 				$('.index_interact_img_center img:eq(5)').remove()
-				$('.index_interact_img_center img:eq(3)').animate({width:'120px',height:'140px',margin:'20px 15px'},800)
-				$('.index_interact_img_center img:eq(2)').animate({width:'180px',height:'210px',margin:'0px 15px'},800)
+				$('.index_interact_img_center img:eq(3)').stop().animate({width:'120px',height:'140px',margin:'20px 15px'},800)
+				$('.index_interact_img_center img:eq(2)').stop().animate({width:'180px',height:'210px',margin:'0px 15px'},800)
 			}
 			a()
 			tim=setInterval(a,2000)
@@ -334,6 +320,45 @@ angular.module('yuanjinweiApp')
             	//alert($stateParams.id)
                 $scope.data=e
             })
+	})
+	
+	.controller('index', function($scope, $http, $state) {
+		 var server="http://123.56.227.177:2503";
+	$http({
+				method:"GET",
+                url:server+"/xiang-auto/"
+           }).success(function(e){
+            	console.log(e)
+                $scope.data=e
+            }).error(function(){
+            	
+            })
+    $http({
+				method:"GET",
+                url:server+"/xiang-info/",
+                params:{"$skip":0,"$limit":9}
+           }).success(function(e){
+           	debugger
+            	console.log(e)
+                $scope.data_jiuyexinxi=e
+            }).error(function(){
+            	
+            })
+            
+            
+            
+            	$scope.indexlunbo2=[
+				{option: "翔坤集团_40.png"},
+				{option: "翔坤集团_42.png"},
+				{option: "翔坤集团_44.png"},
+				{option: "翔坤集团_46.png"},
+				{option: "翔坤集团_49.png"},
+				{option: "翔坤集团_40.png"},
+				{option: "翔坤集团_42.png"},
+				{option: "翔坤集团_44.png"},
+				{option: "翔坤集团_46.png"},
+				{option: "翔坤集团_49.png"}]
+            
 	})
 
 	
