@@ -71,6 +71,7 @@ angular.module('yuanjinweiApp')
 		$http({
 			url:'http://123.56.227.177:2503/xiang-info',
 			method:'get',
+			params:{"$skip":2,"$limit":6}
 		}).success(function (e){
 			$scope.data = e
 		})
@@ -110,40 +111,16 @@ angular.module('yuanjinweiApp')
 			         	$scope.t=t;
 			         	
 			         	
-			         	
-			         $http({
+			     //修改阅读量    	
+			    $http({
 				    url:'http://123.56.227.177:2503/xiang-info',
 				    params:{id:$scope.t},
 				    method:"post",
 				    data:{'readnum':$scope.x}
 				}).success(function(e){
-					
-					
-			         
+     
 				})			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
-			         	
+      	
 			         }
 				//就业指南
 				$http({
@@ -382,6 +359,17 @@ angular.module('yuanjinweiApp')
             }).error(function(){
             	
             })
+     $http({
+				method:"GET",
+                url:server+"/xiang-info/",
+                params:{classfiy:0}
+           }).success(function(e){
+           	//	debugger
+            	console.log(e)
+                $scope.data_zhengce=e
+            }).error(function(){
+            	
+            })
             
             
             
@@ -398,5 +386,13 @@ angular.module('yuanjinweiApp')
 				{option: "翔坤集团_49.png"}]
             
 	})
+	
+//	.filter('jiadian',function(){
+//				return function(e){
+//					return e.toString().substr(0,2)+'...'
+//				}
+//			})
+	
+	
 
 	

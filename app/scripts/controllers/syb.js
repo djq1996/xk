@@ -170,6 +170,7 @@ angular.module('yuanjinweiApp')
 		}
 	}).filter("jieweijiadian", function() {
 		return function(shuzu, number1) {
+			
 			if(shuzu.length > number1) {
 				shuzu = shuzu.substring(0, number1) + "..."
 			}

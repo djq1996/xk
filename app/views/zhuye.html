@@ -121,7 +121,8 @@
 						<img src="../images/zhuan-jia_03.png"/>                        
 					</h2>
 					<ul>
-						<li>
+						<li ng-repeat="t in data_zhengce"  ui-sref="index.zczxS({id:t.id})">{{t.title | limitTo:'18' }}{{t.title.length>10?'...':''}}</li>
+						<!--<li>
 							<img src="../images/翔坤集团_36.png" />
 							<p>李克强江西考察，称中部地区发展...</p>
 							<p>中共中央政治局常委，国务院副总理李克强今日在江...</p>
@@ -131,7 +132,7 @@
 						<li>吉林韩国第一门户网站NAVER招聘Naver Servic互动产</li>
 						<li>上海赛默飞世尔仪器(上海)公司招聘实习生</li>
 						<li>北京人民日报社下属单位招聘应届生(商务合作)</li>
-						<li>北京普天新能源有限责任公司招聘北京运维工程师</li>
+						<li>北京普天新能源有限责任公司招聘北京运维工程师</li>-->
 					</ul>
 				</div>
 			</div>
@@ -139,7 +140,7 @@
 		<div id="index_interact">
 			<div>
 				<h2>
-					<span>国家政策</span>
+					<span>专家展示</span>
 					<img src="../images/zhuan-jia_03.png"/> 
 				</h2>	
 				<lunboxx></lunboxx>
